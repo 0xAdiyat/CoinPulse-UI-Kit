@@ -103,8 +103,6 @@ T
 $coin_pulse/android/gradle.properties,d/8/d8a7b943b22bc9d4a69b979f6e853200b72699c1
 k
 ;coin_pulse/android/gradle/wrapper/gradle-wrapper.properties,f/6/f66a0215cf826bfb8fbe9e248c0206c183c17579
-R
-"coin_pulse/lib/view/home_page.dart,d/3/d37cb8097df61a67aea0848f7b4363faa7caae41
 ‰
 Ycoin_pulse/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist,d/8/d8a29528e8861500acdd4abb97e6a1876207ab07
 w
@@ -209,3 +207,5 @@ z
 Jcoin_pulse/android/app/src/main/java/com/anon/coin_pulse/MainActivity.java,5/2/528fc3041c6b1dae986129828be782fb1bc3a1e5
 H
 coin_pulse/lib/main.dart,e/3/e3d6b7ca7ab8896b8b790934d951ec3fa85129a6
+\
+,coin_pulse/lib/view/home_page/home_page.dart,2/2/22a512500eb274d0972acdec02afd4799f49f70d

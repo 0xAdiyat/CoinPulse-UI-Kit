@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class AppThemes {
-  static ThemeData lightTheme = ThemeData(
-    primaryColor: Colors.blue,
-    hintColor: Colors.green,
-    // Add more theme properties as needed
-  );
+  AppThemes._();
 
-  static ThemeData darkTheme = ThemeData.dark().copyWith(
-      // Customize dark theme properties
-      );
+  static ThemeData lightTheme(BuildContext context) => ThemeData(
+      useMaterial3: true,
+      textTheme: GoogleFonts.latoTextTheme(Theme.of(context).textTheme));
+
+  static ThemeData darkTheme(BuildContext context) =>
+      ThemeData.dark().copyWith();
 }

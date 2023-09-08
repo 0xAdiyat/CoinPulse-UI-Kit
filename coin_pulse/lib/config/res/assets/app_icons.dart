@@ -1,3 +1,3 @@
-class AppIcon {
-  static const tempIcon = 'assets/icons/tempIcon.svg';
+class AppIcons {
+  static const upDownArrowIcon = 'assets/icons/up_down_arrow.svg';
 }

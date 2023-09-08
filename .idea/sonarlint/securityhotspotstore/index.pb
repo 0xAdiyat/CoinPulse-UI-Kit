@@ -11,8 +11,6 @@ b
 ,coin_pulse/lib/config/themes/app_colors.dart,f/1/f11e4825c99c9354bb3cef5ab6db10d36b0bcd73
 _
 /coin_pulse/lib/config/res/assets/app_icons.dart,8/8/8867acda41cd68c0853fd0d330e95db02c0c602d
-R
-"coin_pulse/lib/view/home_page.dart,d/3/d37cb8097df61a67aea0848f7b4363faa7caae41
 M
 coin_pulse/lib/view/view.dart,1/4/14b0b4d009c0188b35fce4c4c741701f83db39ac
 G
@@ -209,3 +207,5 @@ G
 coin_pulse/pubspec.yaml,c/4/c472844474eaeab9157a0b962a9b30cfa4551dc2
 z
 Jcoin_pulse/android/app/src/main/java/com/anon/coin_pulse/MainActivity.java,5/2/528fc3041c6b1dae986129828be782fb1bc3a1e5
+\
+,coin_pulse/lib/view/home_page/home_page.dart,2/2/22a512500eb274d0972acdec02afd4799f49f70d
