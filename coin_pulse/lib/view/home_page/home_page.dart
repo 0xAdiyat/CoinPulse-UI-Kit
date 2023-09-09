@@ -1,8 +1,9 @@
-import 'package:coin_pulse/config/res/assets/app_images.dart';
+import 'package:coin_pulse/config/config.dart';
 import 'package:coin_pulse/widgets/glowing_icon.dart';
 import 'package:coin_pulse/widgets/glowing_text_widget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../components/blurred_gradient_overlay.dart';
 import 'components/cc_exchange_row.dart';
@@ -13,6 +14,17 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double triCircularSpacing = 10;
+    var fromCCIconWidget = SvgPicture.asset(
+      AppIcons.bnbCC,
+      height: 30,
+      fit: BoxFit.cover,
+      color: const Color(0xffFFDD48),
+    );
+    var toCCIconWidget = SvgPicture.asset(
+      AppIcons.xtzCC,
+      height: 28,
+      fit: BoxFit.cover,
+    );
     return Scaffold(
       backgroundColor: Colors.black,
       extendBody: true,
@@ -49,12 +61,8 @@ class HomePage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   CCExchangeRow(
-                    ccIcon: const Icon(
-                      CupertinoIcons.bitcoin,
-                      size: 34,
-                      color: Color(0xffFFDD48),
-                    ),
-                    fromCcName: "SOL",
+                    ccIcon: fromCCIconWidget,
+                    fromCcName: "BNB",
                     ccContainerColor: const Color(0xff21200B),
                     currencyRateFromTxt: "1",
                     currencyRateToTxt: '35,394',
@@ -91,12 +99,8 @@ class HomePage extends StatelessWidget {
                     height: 10,
                   ),
                   CCExchangeRow(
-                    ccIcon: const Icon(
-                      CupertinoIcons.money_dollar,
-                      size: 34,
-                      color: Color(0xff5DBBC8),
-                    ),
-                    toCcName: "ADA",
+                    ccIcon: toCCIconWidget,
+                    toCcName: "XTZ",
                     ccContainerColor: const Color(0xff0B2223),
                     exchangeRateTxt: '20 069',
                     outerContainerColor: const Color(0xff665107),

@@ -6,7 +6,8 @@ class AppThemes {
 
   static ThemeData lightTheme(BuildContext context) => ThemeData(
       useMaterial3: true,
-      textTheme: GoogleFonts.latoTextTheme(Theme.of(context).textTheme));
+      textTheme:
+          GoogleFonts.titilliumWebTextTheme(Theme.of(context).textTheme));
 
   static ThemeData darkTheme(BuildContext context) =>
       ThemeData.dark().copyWith();

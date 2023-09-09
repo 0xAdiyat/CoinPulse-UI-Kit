@@ -229,3 +229,5 @@ m
 =coin_pulse/lib/view/home_page/components/cc_exchange_row.dart,c/b/cb70f48144ed2e2c524c442725746054cfcb622a
 y
 Icoin_pulse/lib/view/home_page/components/outlined_gradient_container.dart,4/0/403d2003669f6279c5af1ee664e62f233c3ce8fa
+g
+7coin_pulse/lib/components/blurred_gradient_overlay.dart,d/d/dd6a99c90635c334effc9bfad5b09d5ed17be573
