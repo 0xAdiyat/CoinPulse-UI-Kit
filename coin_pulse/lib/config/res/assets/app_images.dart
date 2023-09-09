@@ -1,3 +1,3 @@
-class AppImage {
-  static const temp = 'assets/images/temp.jpg';
+class AppImages {
+  static const greenEclipse = 'assets/images/green_eclipse.png';
 }
