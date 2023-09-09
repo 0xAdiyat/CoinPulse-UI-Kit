@@ -231,3 +231,13 @@ y
 Icoin_pulse/lib/view/home_page/components/outlined_gradient_container.dart,4/0/403d2003669f6279c5af1ee664e62f233c3ce8fa
 g
 7coin_pulse/lib/components/blurred_gradient_overlay.dart,d/d/dd6a99c90635c334effc9bfad5b09d5ed17be573
+R
+"coin_pulse/assets/icons/btn_cc.svg,0/8/084d451ff6134547de7f4c59066e50e9680ff984
+R
+"coin_pulse/assets/icons/xtz_cc.svg,2/3/23fc7500822e71827d3f9acafad2420b61a8e30b
+R
+"coin_pulse/assets/icons/bnb_cc.svg,b/3/b3e0019003e7e0582b3e38cea554c18e715ad1fd
+R
+"coin_pulse/assets/icons/btc_cc.svg,1/5/1538c11810bbf78926d16322ba49676debdfe929
+T
+$coin_pulse/assets/icons/strat_cc.svg,4/1/41dca8f3891fb3b3e5a8723cf8005bcb2e1dda8b
