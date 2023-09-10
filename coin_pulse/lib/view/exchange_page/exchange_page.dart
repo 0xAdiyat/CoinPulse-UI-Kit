@@ -4,7 +4,6 @@ import 'package:flutter_svg/svg.dart';
 
 import '../../config/res/assets/app_icons.dart';
 import '../../widgets/glowing_icon.dart';
-import '../home_page/components/tri_circular_nav_button.dart';
 import 'components/cc_exchange_row.dart';
 import 'components/transaction_swap_row.dart';
 
@@ -15,7 +14,6 @@ class ExchangePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double triCircularSpacing = 10;
     var fromCCIconWidget = SvgPicture.asset(
       AppIcons.bnbCC,
       height: 30,
@@ -27,7 +25,6 @@ class ExchangePage extends StatelessWidget {
       fit: BoxFit.cover,
     );
     return SafeArea(
-      bottom: false,
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 30),
         child: Column(
@@ -95,21 +92,6 @@ class ExchangePage extends StatelessWidget {
             const SizedBox(
               height: 40,
             ),
-            TriCircularNavButton(
-                triCircularSpacing: triCircularSpacing,
-                navBtnIcons: [
-                  Icons.account_balance_wallet_rounded,
-                  CupertinoIcons.flame_fill
-                ],
-                navBtnTxt: [
-                  "Change",
-                  "Deposit"
-                ]),
-            TriCircularNavButton(
-                rotateDown: true,
-                triCircularSpacing: triCircularSpacing,
-                navBtnIcons: [Icons.shopping_cart_rounded, Icons.widgets_sharp],
-                navBtnTxt: ["Orders", "Withdraw"]),
           ],
         ),
       ),

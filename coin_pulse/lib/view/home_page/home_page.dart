@@ -1,4 +1,5 @@
 import 'package:coin_pulse/config/config.dart';
+import 'package:coin_pulse/view/home_page/components/tri_circular_navbar.dart';
 import 'package:flutter/material.dart';
 
 import '../../components/blurred_gradient_overlay.dart';
@@ -37,13 +38,16 @@ class HomePage extends StatelessWidget {
             ),
           ),
           const ExchangePage(),
+          Positioned(bottom: 70, right: 0, left: 0, child: TriCircularNavBar()),
           Positioned(
             top: 0,
             bottom: -400,
             left: 0,
             right: -100,
-            child: Image.asset(
-              AppImages.greenEclipse,
+            child: IgnorePointer(
+              child: Image.asset(
+                AppImages.greenEclipse,
+              ),
             ),
           ),
         ],

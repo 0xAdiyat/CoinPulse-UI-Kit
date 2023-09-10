@@ -225,10 +225,6 @@ M
 coin_pulse/macos/Podfile.lock,1/6/16264091b0b274e98c52067baafe6ae593de2871
 Y
 )coin_pulse/assets/icons/up_down_arrow.svg,b/a/ba998a0e738ff0f48367eb06235c025a28160e1e
-m
-=coin_pulse/lib/view/home_page/components/cc_exchange_row.dart,c/b/cb70f48144ed2e2c524c442725746054cfcb622a
-y
-Icoin_pulse/lib/view/home_page/components/outlined_gradient_container.dart,4/0/403d2003669f6279c5af1ee664e62f233c3ce8fa
 g
 7coin_pulse/lib/components/blurred_gradient_overlay.dart,d/d/dd6a99c90635c334effc9bfad5b09d5ed17be573
 R
@@ -241,3 +237,19 @@ T
 $coin_pulse/assets/icons/strat_cc.svg,4/1/41dca8f3891fb3b3e5a8723cf8005bcb2e1dda8b
 R
 "coin_pulse/assets/icons/xtz_cc.svg,2/3/23fc7500822e71827d3f9acafad2420b61a8e30b
+q
+Acoin_pulse/lib/view/exchange_page/components/cc_exchange_row.dart,d/0/d0c784f7a062f1ea506e462e120540e40d6fbeab
+}
+Mcoin_pulse/lib/view/exchange_page/components/outlined_gradient_container.dart,0/a/0ab4d0cc51a63607b0588a6ac7f492dfd878a909
+d
+4coin_pulse/lib/view/exchange_page/exchange_page.dart,7/f/7fc69c303141adaf27cdb15bdc88e7974aa08ca7
+Z
+*coin_pulse/lib/config/const/app_const.dart,9/d/9d7fdc41ed7ee737363864b55bb24d1e0a323b38
+v
+Fcoin_pulse/lib/view/exchange_page/components/transaction_swap_row.dart,3/d/3dd161b617f93ec43e0cc25df0d038d21cd41c9f
+q
+Acoin_pulse/lib/view/home_page/components/tri_circular_navbar.dart,3/c/3c58a43d58fe68ac6259afb0ab0fb08a9823fa7b
+u
+Ecoin_pulse/lib/view/home_page/components/tri_circular_nav_button.dart,2/1/21c13663891916446fac48ed7f174f1f5fcdb2f7
+a
+1coin_pulse/lib/components/triangle_container.dart,1/3/13a8fbdb9a0d4c7c4d2aeed85b6681ea9bfe82d0
