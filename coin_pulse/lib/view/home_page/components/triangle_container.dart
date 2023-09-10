@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/glowing_text_widget.dart';
+import '../../../widgets/glowing_text_widget.dart';
 
 class TriangleContainer extends StatelessWidget {
   const TriangleContainer({
@@ -31,37 +31,37 @@ class TriangleContainer extends StatelessWidget {
         rotateLeft
             ? 400
             : rotateDownLeft
-                ? 35
-                : rotateDown
-                    ? 30
-                    : 35,
+            ? 35
+            : rotateDown
+            ? 30
+            : 35,
       ),
       topRight: Radius.circular(
         rotateLeft
             ? 35
             : rotateDownLeft
-                ? 30
-                : rotateDown
-                    ? 35
-                    : 400,
+            ? 30
+            : rotateDown
+            ? 35
+            : 400,
       ),
       bottomLeft: Radius.circular(
         rotateLeft
             ? 35
             : rotateDownLeft
-                ? 400
-                : rotateDown
-                    ? 35
-                    : 30,
+            ? 400
+            : rotateDown
+            ? 35
+            : 30,
       ),
       bottomRight: Radius.circular(
         rotateLeft
             ? 30
             : rotateDownLeft
-                ? 35
-                : rotateDown
-                    ? 400
-                    : 35,
+            ? 35
+            : rotateDown
+            ? 400
+            : 35,
       ),
     );
 
@@ -75,38 +75,43 @@ class TriangleContainer extends StatelessWidget {
         gradient: LinearGradient(
           begin: isSelectedNav
               ? rotateLeft
-                  ? Alignment.topRight
-                  : rotateDownLeft
-                      ? Alignment.bottomRight
-                      : rotateDown
-                          ? Alignment.bottomLeft
-                          : Alignment.topLeft
+              ? Alignment.topRight
+              : rotateDownLeft
+              ? Alignment.bottomRight
+              : rotateDown
+              ? Alignment.bottomLeft
+              : Alignment.topLeft
               : rotateLeft
-                  ? Alignment.topRight
-                  : Alignment.bottomLeft,
+              ? Alignment.topRight
+              : Alignment.bottomLeft,
           end: isSelectedNav
               ? rotateLeft
-                  ? Alignment.bottomLeft
-                  : rotateDownLeft
-                      ? Alignment.bottomLeft
-                      : rotateDown
-                          ? Alignment.topRight
-                          : Alignment.bottomRight
+              ? Alignment.bottomLeft
+              : rotateDownLeft
+              ? Alignment.bottomLeft
+              : rotateDown
+              ? Alignment.topRight
+              : Alignment.bottomRight
               : rotateLeft
-                  ? Alignment.bottomRight
-                  : Alignment.topLeft,
+              ? Alignment.bottomRight
+              : Alignment.topLeft,
           colors: isSelectedNav
               ? [
-                  const Color(0xff6DFB8D),
-                  const Color(0xff67FF89),
-                  const Color(0xffABF5BA),
-                  const Color(0xff9CFCB0),
-                  const Color(0xff67FE85),
-                ]
-              : [
-                  Colors.black,
-                  const Color(0xff3B5F43),
-                ],
+            const Color(0xff6DFB8D),
+            const Color(0xff67FF89),
+            const Color(0xffABF5BA),
+            const Color(0xff9CFCB0),
+            const Color(0xff67FE85),
+          ]
+              : currentIndex != 0 ?
+          [
+            Colors.black,
+            const Color(0xff3B5F43),
+          ] : [
+            const Color(0xff3B5F43),
+
+            Colors.black,
+          ],
         ),
       ),
       child: Container(
@@ -116,11 +121,11 @@ class TriangleContainer extends StatelessWidget {
         decoration: BoxDecoration(
           boxShadow: isSelectedNav
               ? [
-                  const BoxShadow(
-                      color: Color(0xff8AFFA3),
-                      blurRadius: 10.0,
-                      spreadRadius: 5),
-                ]
+            const BoxShadow(
+                color: Color(0xff8AFFA3),
+                blurRadius: 10.0,
+                spreadRadius: 5),
+          ]
               : [],
           color: Colors.black,
           borderRadius: triangleBorderRadius,
@@ -145,14 +150,14 @@ class TriangleContainer extends StatelessWidget {
             ),
             isSelectedNav
                 ? GlowingTextWidget(
-                    text: navBtnText,
-                    glowColor: Colors.greenAccent,
-                    textColor: const Color(0xff7ef39b),
-                    fontSize: 14)
+                text: navBtnText,
+                glowColor: Colors.greenAccent,
+                textColor: const Color(0xff7ef39b),
+                fontSize: 14)
                 : Text(
-                    navBtnText,
-                    style: const TextStyle(color: Color(0xff4E5A54)),
-                  ),
+              navBtnText,
+              style: const TextStyle(color: Color(0xff4E5A54)),
+            ),
             if (!rotateLeft && rotateDown || rotateDownLeft)
               const SizedBox(
                 height: 20,

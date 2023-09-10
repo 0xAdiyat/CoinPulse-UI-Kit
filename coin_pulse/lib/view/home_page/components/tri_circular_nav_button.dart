@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../components/triangle_container.dart';
+import 'triangle_container.dart';
 
 class TriCircularNavButton extends StatelessWidget {
   const TriCircularNavButton(
