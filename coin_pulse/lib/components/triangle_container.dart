@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../widgets/glowing_text_widget.dart';
 
 class TriangleContainer extends StatelessWidget {
-  TriangleContainer({
+  const TriangleContainer({
     super.key,
     required this.spacing,
     required this.navBtnIcon,
@@ -15,7 +15,7 @@ class TriangleContainer extends StatelessWidget {
   final double spacing;
   final IconData navBtnIcon;
   final int selectedIndex;
-  int currentIndex;
+  final int currentIndex;
   final String navBtnText;
 
   @override

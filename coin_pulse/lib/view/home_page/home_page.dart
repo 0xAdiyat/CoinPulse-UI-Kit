@@ -5,8 +5,15 @@ import 'package:flutter/material.dart';
 import '../../components/blurred_gradient_overlay.dart';
 import '../exchange_page/exchange_page.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   const HomePage({super.key});
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  int selectedTriNavBtn = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -38,12 +45,22 @@ class HomePage extends StatelessWidget {
             ),
           ),
           const ExchangePage(),
-          Positioned(bottom: 70, right: 0, left: 0, child: TriCircularNavBar()),
           Positioned(
-            top: 0,
-            bottom: -400,
-            left: 0,
-            right: -100,
+              bottom: 70,
+              right: 0,
+              left: 0,
+              child: TriCircularNavBar(
+                currentSelectedNavButton: (int value) {
+                  setState(() {
+                    selectedTriNavBtn = value;
+                  });
+                },
+              )),
+          Positioned(
+            top: selectedTriNavBtn == 3 ? 200 : 0,
+            bottom: selectedTriNavBtn == 2 ? -600 : -400,
+            left: selectedTriNavBtn == 3 ? -200 : 0,
+            right: selectedTriNavBtn == 1 ? 100 : -100,
             child: IgnorePointer(
               child: Image.asset(
                 AppImages.greenEclipse,

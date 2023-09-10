@@ -5,7 +5,9 @@ import 'package:flutter/material.dart';
 import '../../../config/const/app_const.dart';
 
 class TriCircularNavBar extends StatefulWidget {
-  const TriCircularNavBar({super.key});
+  final ValueChanged<int> currentSelectedNavButton;
+
+  const TriCircularNavBar({super.key, required this.currentSelectedNavButton});
 
   @override
   State<TriCircularNavBar> createState() => _TriCircularNavBarState();
@@ -42,6 +44,7 @@ class _TriCircularNavBarState extends State<TriCircularNavBar> {
           onIndexChanged: (int newIndex) {
             setState(() {
               selectedIndex = newIndex;
+              widget.currentSelectedNavButton(selectedIndex);
             });
           },
         ),
@@ -55,6 +58,7 @@ class _TriCircularNavBarState extends State<TriCircularNavBar> {
           onIndexChanged: (int newIndex) {
             setState(() {
               selectedIndex = newIndex;
+              widget.currentSelectedNavButton(selectedIndex);
             });
           },
         ),
