@@ -1,6 +1,7 @@
+import 'package:coin_pulse/view/exchange_page/components/cc_rate_details.dart';
 import 'package:flutter/material.dart';
 
-import 'outlined_gradient_container.dart';
+import '../../../widgets/outlined_gradient_container.dart';
 
 class CCExchangeRow extends StatelessWidget {
   const CCExchangeRow({
@@ -35,16 +36,19 @@ class CCExchangeRow extends StatelessWidget {
       children: [
         cCIconNameRow(),
         OutlinedGradientContainer(
-          fromCcName: fromCcName ?? "",
-          toCcName: toCcName ?? "",
-          currencyRateFromTxt: currencyRateFromTxt,
-          currencyRateToTxt: currencyRateToTxt,
-          exchangeRateTxt: exchangeRateTxt,
           outerContainerColor: outerContainerColor,
           outerOutlineColors: outerOutlineColors,
-          toCurrencyRate: toCurrencyRate,
-          isFromExchange: isFromExchange,
           innerContainerColor: innerContainerColor,
+          isTransform6: true,
+          child: CCRateDetails(
+            fromCcName: fromCcName ?? "",
+            toCcName: toCcName ?? "",
+            currencyRateFromTxt: currencyRateFromTxt,
+            currencyRateToTxt: currencyRateToTxt,
+            exchangeRateTxt: exchangeRateTxt,
+            toCurrencyRate: toCurrencyRate,
+            isFromExchange: isFromExchange,
+          ),
         ),
       ],
     );
@@ -60,14 +64,6 @@ class CCExchangeRow extends StatelessWidget {
             shape: BoxShape.rectangle,
             color: ccContainerColor,
             borderRadius: BorderRadius.circular(16),
-            boxShadow: const [
-              BoxShadow(
-                color: Colors.black,
-                spreadRadius: 2,
-                blurRadius: 4,
-                offset: Offset(0, 2),
-              ),
-            ],
           ),
           child: IconButton(onPressed: () {}, icon: ccIcon),
         ),

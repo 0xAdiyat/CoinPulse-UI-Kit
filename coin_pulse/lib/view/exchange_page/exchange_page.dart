@@ -49,7 +49,7 @@ class ExchangePage extends StatelessWidget {
               isFromExchange: true,
             ),
             const SizedBox(
-              height: 10,
+              height: 15,
             ),
             const GlowingIcon(
                 glowColor: Color(0xff91DC9C),
@@ -67,7 +67,7 @@ class ExchangePage extends StatelessWidget {
                   ),
                 )),
             const SizedBox(
-              height: 10,
+              height: 15,
             ),
             CCExchangeRow(
               ccIcon: toCCIconWidget,
@@ -88,7 +88,7 @@ class ExchangePage extends StatelessWidget {
             const SizedBox(
               height: 60,
             ),
-            TransactionSwapRow(),
+            const TransactionSwapRow(),
             const SizedBox(
               height: 40,
             ),

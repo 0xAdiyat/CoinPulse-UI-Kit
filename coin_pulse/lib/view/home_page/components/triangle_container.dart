@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 import '../../../widgets/glowing_text_widget.dart';
 
@@ -13,7 +14,7 @@ class TriangleContainer extends StatelessWidget {
   });
 
   final double spacing;
-  final IconData navBtnIcon;
+  final String navBtnIcon;
   final int selectedIndex;
   final int currentIndex;
   final String navBtnText;
@@ -66,7 +67,7 @@ class TriangleContainer extends StatelessWidget {
     );
 
     return AnimatedContainer(
-      duration: Duration(milliseconds: 300),
+      duration: const Duration(milliseconds: 100),
       height: 150,
       width: 150,
       alignment: Alignment.center,
@@ -116,7 +117,7 @@ class TriangleContainer extends StatelessWidget {
         ),
       ),
       child: AnimatedContainer(
-        duration: Duration(milliseconds: 100),
+        duration: const Duration(milliseconds: 100),
         height: isSelectedNav ? 125 : 145,
         width: isSelectedNav ? 125 : 145,
         alignment: Alignment.center,
@@ -140,12 +141,15 @@ class TriangleContainer extends StatelessWidget {
               const SizedBox(
                 height: 20,
               ),
-            Icon(
+            SvgPicture.asset(
               navBtnIcon,
-              size: 30,
-              color: isSelectedNav
-                  ? const Color(0xffD3FCDD)
-                  : const Color(0xff5D7562),
+              height: 30,
+              width: 30,
+              colorFilter: ColorFilter.mode(
+                  isSelectedNav
+                      ? const Color(0xffD3FCDD)
+                      : const Color(0xff5D7562),
+                  BlendMode.srcIn),
             ),
             const SizedBox(
               height: 5,
@@ -158,7 +162,7 @@ class TriangleContainer extends StatelessWidget {
                     fontSize: 14)
                 : AnimatedDefaultTextStyle(
                     style: const TextStyle(color: Color(0xff4E5A54)),
-                    duration: Duration(milliseconds: 100),
+                    duration: const Duration(milliseconds: 100),
                     child: Text(
                       navBtnText,
                     ),

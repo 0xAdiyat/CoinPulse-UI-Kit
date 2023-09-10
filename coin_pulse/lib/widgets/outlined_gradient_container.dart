@@ -1,28 +1,23 @@
-import 'package:coin_pulse/components/custom_outline.dart';
-import 'package:flutter/material.dart';
 import 'dart:math' as math;
-import '../../../widgets/glowing_text_widget.dart';
+
+import 'package:coin_pulse/widgets/custom_outline.dart';
+import 'package:flutter/material.dart';
 
 class OutlinedGradientContainer extends StatelessWidget {
   const OutlinedGradientContainer({
     super.key,
-    this.fromCcName,
-    this.toCcName,
-    this.currencyRateFromTxt,
-    this.currencyRateToTxt,
-    required this.exchangeRateTxt,
     required this.outerContainerColor,
     required this.outerOutlineColors,
-    required this.isFromExchange,
-    this.toCurrencyRate,
     required this.innerContainerColor,
+    required this.child,
+    required this.isTransform6,
   });
-  final String? fromCcName, toCcName;
-  final String? currencyRateFromTxt, currencyRateToTxt, toCurrencyRate;
+
   final Color outerContainerColor, innerContainerColor;
   final List<Color> outerOutlineColors;
-  final bool isFromExchange;
-  final String exchangeRateTxt;
+  final Widget child;
+  final bool isTransform6;
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -32,7 +27,7 @@ class OutlinedGradientContainer extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(30),
         gradient: LinearGradient(
-            transform: GradientRotation(isFromExchange ? 6 : 9),
+            transform: GradientRotation(isTransform6 ? 6 : 9),
             begin: Alignment.bottomLeft,
             end: Alignment.topRight,
             colors: [
@@ -53,7 +48,7 @@ class OutlinedGradientContainer extends StatelessWidget {
           width: 0,
           height: 0,
           gradient: LinearGradient(
-              transform: GradientRotation(isFromExchange ? 6 : 9),
+              transform: GradientRotation(isTransform6 ? 6 : 9),
               begin: Alignment.bottomLeft,
               end: Alignment.topRight,
               colors: outerOutlineColors,
@@ -72,32 +67,7 @@ class OutlinedGradientContainer extends StatelessWidget {
                     innerContainerColor.withOpacity(0.7)
                   ]),
             ),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.end,
-              children: [
-                Text(
-                  isFromExchange
-                      ? "$currencyRateFromTxt $fromCcName ~ $currencyRateToTxt $toCcName"
-                      : "~\$$toCurrencyRate",
-                  textAlign: TextAlign.end,
-                  style: const TextStyle(
-                      fontSize: 14,
-                      color: Color(0xff7B939A),
-                      fontWeight: FontWeight.bold),
-                ),
-                const SizedBox(
-                  height: 8,
-                ),
-                GlowingTextWidget(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 23,
-                  text: exchangeRateTxt,
-                  glowColor: Colors.white.withOpacity(0.7),
-                  textColor: Colors.white,
-                ),
-              ],
-            ),
+            child: child,
           ),
         ),
       ),

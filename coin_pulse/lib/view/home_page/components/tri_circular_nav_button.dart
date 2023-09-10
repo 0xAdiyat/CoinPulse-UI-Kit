@@ -14,8 +14,8 @@ class TriCircularNavButton extends StatelessWidget {
       required this.onIndexChanged});
 
   final double triCircularSpacing;
-  final List<IconData> navBtnIcons;
-  final List<String> navBtnTxt;
+  final List<String> navBtnTxt, navBtnIcons;
+
   final List<int> triNavIndex;
 
   final bool isUpperRow;

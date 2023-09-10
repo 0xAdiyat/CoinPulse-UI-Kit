@@ -1,9 +1,11 @@
 import 'package:coin_pulse/config/config.dart';
+import 'package:coin_pulse/view/deposit_page/deposit_page.dart';
 import 'package:coin_pulse/view/home_page/components/tri_circular_navbar.dart';
 import 'package:flutter/material.dart';
 
-import '../../components/blurred_gradient_overlay.dart';
+import '../../widgets/blurred_gradient_overlay.dart';
 import '../exchange_page/exchange_page.dart';
+import '../order_page/order_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -15,8 +17,25 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   int selectedTriNavBtn = 0;
 
+  PageController? _pageController;
+
+  @override
+  void initState() {
+    _pageController = PageController(
+      initialPage: 0,
+    );
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    _pageController!.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
+    var screenHeight = MediaQuery.sizeOf(context).height;
     return Scaffold(
       backgroundColor: Colors.black,
       extendBody: true,
@@ -44,7 +63,11 @@ class _HomePageState extends State<HomePage> {
               sigmaXY: 220,
             ),
           ),
-          const ExchangePage(),
+          PageView(controller: _pageController, children: const [
+            ExchangePage(),
+            DepositPage(),
+            OrderPage(),
+          ]),
           Positioned(
               bottom: 70,
               right: 0,
@@ -53,11 +76,12 @@ class _HomePageState extends State<HomePage> {
                 currentSelectedNavButton: (int value) {
                   setState(() {
                     selectedTriNavBtn = value;
+                    _pageController!.jumpToPage(selectedTriNavBtn);
                   });
                 },
               )),
           AnimatedPositioned(
-            duration: Duration(milliseconds: 300),
+            duration: Duration(milliseconds: 100),
             top: selectedTriNavBtn == 3 ? 200 : 0,
             bottom: selectedTriNavBtn == 2 ? -600 : -400,
             left: selectedTriNavBtn == 3 ? -200 : 0,

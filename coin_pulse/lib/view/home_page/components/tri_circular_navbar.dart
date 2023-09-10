@@ -1,3 +1,4 @@
+import 'package:coin_pulse/config/res/assets/app_icons.dart';
 import 'package:coin_pulse/view/home_page/components/tri_circular_nav_button.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -25,11 +26,11 @@ class _TriCircularNavBarState extends State<TriCircularNavBar> {
       "Orders"
     ];
     final List<int> navBtnIndex = [0, 1, 2, 3];
-    final List<IconData> navBtnIcons = [
-      Icons.account_balance_wallet_rounded,
-      CupertinoIcons.flame_fill,
-      Icons.widgets_sharp,
-      Icons.shopping_cart_rounded,
+    final List<String> navBtnIcons = [
+      AppIcons.exchangeNav,
+      AppIcons.depositNav,
+      AppIcons.withdrawNav,
+      AppIcons.ordersNav,
     ];
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
