@@ -56,7 +56,8 @@ class _HomePageState extends State<HomePage> {
                   });
                 },
               )),
-          Positioned(
+          AnimatedPositioned(
+            duration: Duration(milliseconds: 300),
             top: selectedTriNavBtn == 3 ? 200 : 0,
             bottom: selectedTriNavBtn == 2 ? -600 : -400,
             left: selectedTriNavBtn == 3 ? -200 : 0,

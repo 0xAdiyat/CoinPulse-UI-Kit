@@ -21,8 +21,7 @@ class GlowingTextWidget extends StatelessWidget {
     return GlowingOverscrollIndicator(
       axisDirection: AxisDirection.down,
       color: glowColor,
-      child: Text(
-        text,
+      child: AnimatedDefaultTextStyle(
         style: TextStyle(
           fontSize: fontSize,
           fontWeight: fontWeight,
@@ -34,6 +33,10 @@ class GlowingTextWidget extends StatelessWidget {
               offset: const Offset(0, 0),
             ),
           ],
+        ),
+        duration: Duration(milliseconds: 100),
+        child: Text(
+          text,
         ),
       ),
     );

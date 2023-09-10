@@ -31,41 +31,42 @@ class TriangleContainer extends StatelessWidget {
         rotateLeft
             ? 400
             : rotateDownLeft
-            ? 35
-            : rotateDown
-            ? 30
-            : 35,
+                ? 35
+                : rotateDown
+                    ? 30
+                    : 35,
       ),
       topRight: Radius.circular(
         rotateLeft
             ? 35
             : rotateDownLeft
-            ? 30
-            : rotateDown
-            ? 35
-            : 400,
+                ? 30
+                : rotateDown
+                    ? 35
+                    : 400,
       ),
       bottomLeft: Radius.circular(
         rotateLeft
             ? 35
             : rotateDownLeft
-            ? 400
-            : rotateDown
-            ? 35
-            : 30,
+                ? 400
+                : rotateDown
+                    ? 35
+                    : 30,
       ),
       bottomRight: Radius.circular(
         rotateLeft
             ? 30
             : rotateDownLeft
-            ? 35
-            : rotateDown
-            ? 400
-            : 35,
+                ? 35
+                : rotateDown
+                    ? 400
+                    : 35,
       ),
     );
 
-    return Container(
+    return AnimatedContainer(
+      duration: Duration(milliseconds: 300),
       height: 150,
       width: 150,
       alignment: Alignment.center,
@@ -75,57 +76,58 @@ class TriangleContainer extends StatelessWidget {
         gradient: LinearGradient(
           begin: isSelectedNav
               ? rotateLeft
-              ? Alignment.topRight
-              : rotateDownLeft
-              ? Alignment.bottomRight
-              : rotateDown
-              ? Alignment.bottomLeft
-              : Alignment.topLeft
+                  ? Alignment.topRight
+                  : rotateDownLeft
+                      ? Alignment.bottomRight
+                      : rotateDown
+                          ? Alignment.bottomLeft
+                          : Alignment.topLeft
               : rotateLeft
-              ? Alignment.topRight
-              : Alignment.bottomLeft,
+                  ? Alignment.topRight
+                  : Alignment.bottomLeft,
           end: isSelectedNav
               ? rotateLeft
-              ? Alignment.bottomLeft
-              : rotateDownLeft
-              ? Alignment.bottomLeft
-              : rotateDown
-              ? Alignment.topRight
-              : Alignment.bottomRight
+                  ? Alignment.bottomLeft
+                  : rotateDownLeft
+                      ? Alignment.bottomLeft
+                      : rotateDown
+                          ? Alignment.topRight
+                          : Alignment.bottomRight
               : rotateLeft
-              ? Alignment.bottomRight
-              : Alignment.topLeft,
+                  ? Alignment.bottomRight
+                  : Alignment.topLeft,
           colors: isSelectedNav
               ? [
-            const Color(0xff6DFB8D),
-            const Color(0xff67FF89),
-            const Color(0xffABF5BA),
-            const Color(0xff9CFCB0),
-            const Color(0xff67FE85),
-          ]
-              : currentIndex != 0 ?
-          [
-            Colors.black,
-            const Color(0xff3B5F43),
-          ] : [
-            const Color(0xff3B5F43),
-
-            Colors.black,
-          ],
+                  const Color(0xff6DFB8D),
+                  const Color(0xff67FF89),
+                  const Color(0xffABF5BA),
+                  const Color(0xff9CFCB0),
+                  const Color(0xff67FE85),
+                ]
+              : currentIndex != 0
+                  ? [
+                      Colors.black,
+                      const Color(0xff3B5F43),
+                    ]
+                  : [
+                      const Color(0xff3B5F43),
+                      Colors.black,
+                    ],
         ),
       ),
-      child: Container(
+      child: AnimatedContainer(
+        duration: Duration(milliseconds: 100),
         height: isSelectedNav ? 125 : 145,
         width: isSelectedNav ? 125 : 145,
         alignment: Alignment.center,
         decoration: BoxDecoration(
           boxShadow: isSelectedNav
               ? [
-            const BoxShadow(
-                color: Color(0xff8AFFA3),
-                blurRadius: 10.0,
-                spreadRadius: 5),
-          ]
+                  const BoxShadow(
+                      color: Color(0xff8AFFA3),
+                      blurRadius: 10.0,
+                      spreadRadius: 5),
+                ]
               : [],
           color: Colors.black,
           borderRadius: triangleBorderRadius,
@@ -150,14 +152,17 @@ class TriangleContainer extends StatelessWidget {
             ),
             isSelectedNav
                 ? GlowingTextWidget(
-                text: navBtnText,
-                glowColor: Colors.greenAccent,
-                textColor: const Color(0xff7ef39b),
-                fontSize: 14)
-                : Text(
-              navBtnText,
-              style: const TextStyle(color: Color(0xff4E5A54)),
-            ),
+                    text: navBtnText,
+                    glowColor: Colors.greenAccent,
+                    textColor: const Color(0xff7ef39b),
+                    fontSize: 14)
+                : AnimatedDefaultTextStyle(
+                    style: const TextStyle(color: Color(0xff4E5A54)),
+                    duration: Duration(milliseconds: 100),
+                    child: Text(
+                      navBtnText,
+                    ),
+                  ),
             if (!rotateLeft && rotateDown || rotateDownLeft)
               const SizedBox(
                 height: 20,
