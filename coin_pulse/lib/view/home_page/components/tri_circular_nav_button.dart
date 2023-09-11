@@ -11,9 +11,11 @@ class TriCircularNavButton extends StatelessWidget {
       required this.triNavIndex,
       this.isUpperRow = true,
       required this.selectedIndex,
-      required this.onIndexChanged});
+      required this.onIndexChanged,
+      this.extraVerticalSpacing});
 
   final double triCircularSpacing;
+  final double? extraVerticalSpacing;
   final List<String> navBtnTxt, navBtnIcons;
 
   final List<int> triNavIndex;
@@ -34,6 +36,7 @@ class TriCircularNavButton extends StatelessWidget {
           },
           child: TriangleContainer(
             spacing: triCircularSpacing,
+            extraVerticalSpacing: extraVerticalSpacing,
             navBtnIcon: isUpperRow ? navBtnIcons[1] : navBtnIcons[3],
             navBtnText: isUpperRow ? navBtnTxt[1] : navBtnTxt[3],
             selectedIndex: selectedIndex,
@@ -49,6 +52,7 @@ class TriCircularNavButton extends StatelessWidget {
           },
           child: TriangleContainer(
             spacing: triCircularSpacing,
+            extraVerticalSpacing: extraVerticalSpacing,
             navBtnIcon: isUpperRow ? navBtnIcons[0] : navBtnIcons[2],
             navBtnText: isUpperRow ? navBtnTxt[0] : navBtnTxt[2],
             selectedIndex: selectedIndex,

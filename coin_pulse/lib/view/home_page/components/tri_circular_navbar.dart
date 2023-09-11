@@ -19,6 +19,8 @@ class _TriCircularNavBarState extends State<TriCircularNavBar> {
 
   @override
   Widget build(BuildContext context) {
+    double extraVerticalSpacing = selectedIndex == 1 ? 20 : 0;
+
     final List<String> navBtnTitles = [
       "Change",
       "Deposit",
@@ -37,10 +39,11 @@ class _TriCircularNavBarState extends State<TriCircularNavBar> {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         TriCircularNavButton(
-          triCircularSpacing: triCircularSpacing,
+          triCircularSpacing: kTriCircularSpacing,
           navBtnIcons: navBtnIcons,
           navBtnTxt: navBtnTitles,
           triNavIndex: navBtnIndex,
+          extraVerticalSpacing: extraVerticalSpacing,
           selectedIndex: selectedIndex,
           onIndexChanged: (int newIndex) {
             setState(() {
@@ -50,10 +53,11 @@ class _TriCircularNavBarState extends State<TriCircularNavBar> {
           },
         ),
         TriCircularNavButton(
-          triCircularSpacing: triCircularSpacing,
+          triCircularSpacing: kTriCircularSpacing,
           navBtnIcons: navBtnIcons,
           navBtnTxt: navBtnTitles,
           triNavIndex: navBtnIndex,
+          extraVerticalSpacing: extraVerticalSpacing,
           isUpperRow: false,
           selectedIndex: selectedIndex,
           onIndexChanged: (int newIndex) {

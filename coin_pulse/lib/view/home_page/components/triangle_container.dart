@@ -1,3 +1,4 @@
+import 'package:coin_pulse/config/constants/app_const.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -12,6 +13,7 @@ class TriangleContainer extends StatelessWidget {
     required this.navBtnText,
     required this.currentIndex,
     required this.selectedIndex,
+    this.extraVerticalSpacing,
   });
 
   final double spacing;
@@ -19,6 +21,7 @@ class TriangleContainer extends StatelessWidget {
   final int selectedIndex;
   final int currentIndex;
   final String navBtnText;
+  final double? extraVerticalSpacing;
 
   // Define color constants
 
@@ -70,11 +73,11 @@ class TriangleContainer extends StatelessWidget {
     );
 
     return AnimatedContainer(
-      duration: const Duration(milliseconds: 100),
+      duration: const Duration(milliseconds: kAnimationDuration),
       height: 150,
       width: 150,
       alignment: Alignment.center,
-      margin: EdgeInsets.only(top: spacing),
+      margin: EdgeInsets.only(top: spacing + extraVerticalSpacing! ?? 0),
       decoration: BoxDecoration(
         borderRadius: triangleBorderRadius,
         gradient: LinearGradient(
@@ -120,7 +123,7 @@ class TriangleContainer extends StatelessWidget {
         ),
       ),
       child: AnimatedContainer(
-        duration: const Duration(milliseconds: 100),
+        duration: const Duration(milliseconds: kAnimationDuration),
         height: isSelectedNav ? 125 : 145,
         width: isSelectedNav ? 125 : 145,
         alignment: Alignment.center,
@@ -162,7 +165,7 @@ class TriangleContainer extends StatelessWidget {
                     fontSize: 14)
                 : AnimatedDefaultTextStyle(
                     style: const TextStyle(color: kTextDefaultColor),
-                    duration: const Duration(milliseconds: 100),
+                    duration: const Duration(milliseconds: kAnimationDuration),
                     child: Text(
                       navBtnText,
                     ),

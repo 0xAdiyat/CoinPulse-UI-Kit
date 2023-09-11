@@ -1,4 +1,5 @@
 import 'package:coin_pulse/config/config.dart';
+import 'package:coin_pulse/config/constants/app_const.dart';
 import 'package:coin_pulse/view/deposit_page/deposit_page.dart';
 import 'package:coin_pulse/view/home_page/components/tri_circular_navbar.dart';
 import 'package:flutter/material.dart';
@@ -65,6 +66,7 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
           SafeArea(
+            top: selectedTriNavBtn == 1 ? false : true,
             child: PageView(
                 physics: const NeverScrollableScrollPhysics(),
                 controller: _pageController,
@@ -74,8 +76,10 @@ class _HomePageState extends State<HomePage> {
                   OrderPage(),
                 ]),
           ),
-          Positioned(
-              bottom: 70,
+          AnimatedPositioned(
+              curve: Curves.easeInCubic,
+              duration: const Duration(milliseconds: 200),
+              bottom: selectedTriNavBtn == 1 ? -150 : 70,
               right: 0,
               left: 0,
               child: TriCircularNavBar(
@@ -87,8 +91,12 @@ class _HomePageState extends State<HomePage> {
                 },
               )),
           AnimatedPositioned(
-            duration: const Duration(milliseconds: 100),
-            top: selectedTriNavBtn == 3 ? 200 : 0,
+            duration: const Duration(milliseconds: kAnimationDuration),
+            top: selectedTriNavBtn == 3
+                ? 200
+                : selectedTriNavBtn == 1
+                    ? 300
+                    : 0,
             bottom: selectedTriNavBtn == 2 ? -600 : -400,
             left: selectedTriNavBtn == 3 ? -200 : 0,
             right: selectedTriNavBtn == 1 ? 100 : -100,

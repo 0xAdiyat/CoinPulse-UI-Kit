@@ -1,3 +1,3 @@
-const double triCircularSpacing = 10;
-const int kTimeOutDuration = 20;
-const double kGlobalPadding = 30;
+const double kTriCircularSpacing = 10.0;
+const double kGlobalPadding = 25.0;
+const int kAnimationDuration = 100;

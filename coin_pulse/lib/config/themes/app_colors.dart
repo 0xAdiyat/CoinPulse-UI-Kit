@@ -9,7 +9,7 @@ const kBottomLeftOverlayColor = Color(0xff326045);
 const kCenterTopOverlayColor = Color(0xff211F09);
 
 // GRADIENT CONTAINER COLORS
-final kBlueGradientOuterLineColor = [
+final kBlueGradientOuterLineColors = [
   Colors.transparent,
   Colors.lightBlue.withOpacity(.4),
   Colors.blueGrey.withOpacity(0.1),
@@ -18,7 +18,7 @@ final kBlueGradientOuterLineColor = [
 const kBlueGradientInnerContainerColor = Color(0xff153439);
 const kBlueGradientOuterContainerColor = Color(0xff315E65);
 
-final kOrangeGradientOuterLineColor = [
+final kOrangeGradientOuterLineColors = [
   Colors.transparent,
   Colors.amberAccent.withOpacity(.4),
   Colors.amberAccent.withOpacity(0.1),
@@ -26,6 +26,63 @@ final kOrangeGradientOuterLineColor = [
 ];
 const kOrangeGradientInnerContainerColor = Color(0xff292412);
 const kOrangeGradientOuterContainerColor = Color(0xff665107);
+
+// Red Gradient Colors
+final kRedGradientOuterLineColors = [
+  Colors.transparent,
+  Colors.redAccent.withOpacity(.4),
+  Colors.red.withOpacity(0.1),
+  Colors.deepOrange.withOpacity(0.1)
+];
+const kRedGradientInnerContainerColor = Color(0xff440505);
+const kRedGradientOuterContainerColor = Color(0xff9F1D1D);
+
+// Green Gradient Colors
+final kGreenGradientOuterLineColors = [
+  Colors.transparent,
+  Colors.green.withOpacity(.4),
+  Colors.lightGreen.withOpacity(0.1),
+  Colors.lime.withOpacity(0.1)
+];
+const kGreenGradientInnerContainerColor = Color(0xff104F0A);
+const kGreenGradientOuterContainerColor = Color(0xff3F7E21);
+
+// Yellow Gradient Colors
+final kYellowGradientOuterLineColors = [
+  Colors.transparent,
+  Colors.yellowAccent.withOpacity(.4),
+  Colors.yellow.withOpacity(0.1),
+  Colors.amber.withOpacity(0.1)
+];
+const kYellowGradientInnerContainerColor = Color(0xff4C4A1A);
+const kYellowGradientOuterContainerColor = Color(0xff8F8315);
+
+// Pink Gradient Colors
+final kPinkGradientOuterLineColors = [
+  Colors.transparent,
+  Colors.pinkAccent.withOpacity(.4),
+  Colors.pinkAccent.withOpacity(0.1),
+  Colors.pink.withOpacity(0.1)
+];
+const kPinkGradientInnerContainerColor = Color(0xff470839);
+const kPinkGradientOuterContainerColor = Color(0xffA4237A);
+
+// Black Gradient Colors
+final kBlackGradientOuterLineColors = [
+  Colors.transparent,
+  Colors.grey.withOpacity(.4),
+  Colors.black.withOpacity(0.1),
+  Colors.black87.withOpacity(0.1)
+];
+const kBlackGradientInnerContainerColor = Color(0xff0D0D0D);
+const kBlackGradientOuterContainerColor = Color(0xff333333);
+
+const kTransparentGradientOuterLineColors = [
+  Colors.transparent,
+  Colors.transparent,
+  Colors.transparent,
+  Colors.transparent
+];
 
 const kDarkBlueColor = Color(0xff21200B);
 const kDarkOrangeColor = Color(0xff0B2223);
