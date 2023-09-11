@@ -1,3 +1,4 @@
+import 'package:coin_pulse/config/config.dart';
 import 'package:flutter/material.dart';
 
 import '../../../widgets/glowing_text_widget.dart';
@@ -12,6 +13,7 @@ class CCRateDetails extends StatelessWidget {
     required this.toCcName,
     required this.toCurrencyRate,
     required this.exchangeRateTxt,
+    this.ccRateTxtColor,
   });
 
   final bool isFromExchange;
@@ -21,6 +23,7 @@ class CCRateDetails extends StatelessWidget {
   final String? toCcName;
   final String? toCurrencyRate;
   final String exchangeRateTxt;
+  final Color? ccRateTxtColor;
 
   @override
   Widget build(BuildContext context) {
@@ -30,12 +33,17 @@ class CCRateDetails extends StatelessWidget {
       children: [
         Text(
           isFromExchange
-              ? "$currencyRateFromTxt $fromCcName ~ $currencyRateToTxt $toCcName"
-              : "~\$$toCurrencyRate",
+              ? AppStrings.getCurrencyRateTextFormat(
+                  currencyRateFromTxt: currencyRateFromTxt,
+                  fromCcName: fromCcName,
+                  currencyRateToTxt: currencyRateToTxt,
+                  toCcName: toCcName)
+              : AppStrings.getCurrencyRateTextFormat(
+                  toCurrencyRate: toCurrencyRate),
           textAlign: TextAlign.end,
-          style: const TextStyle(
+          style: TextStyle(
               fontSize: 14,
-              color: Color(0xff7B939A),
+              color: ccRateTxtColor ?? kDarkBlueTextColor,
               fontWeight: FontWeight.bold),
         ),
         const SizedBox(

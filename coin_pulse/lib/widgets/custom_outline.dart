@@ -32,8 +32,8 @@ class CustomOutline extends StatelessWidget {
       child: Container(
         width: _width,
         height: _height,
-        child: _child,
         padding: _padding,
+        child: _child,
       ),
     );
   }

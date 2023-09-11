@@ -36,20 +36,21 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     var screenHeight = MediaQuery.sizeOf(context).height;
+
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: kPrimaryColor,
       extendBody: true,
       body: Stack(
         children: [
           const Positioned(
             top: -100,
             right: -100,
-            child: BlurredGradientOverlay(color: Color(0xff0A3C47)),
+            child: BlurredGradientOverlay(color: kTopRightOverlayColor),
           ),
           const Positioned(
             bottom: -100,
             left: -100,
-            child: BlurredGradientOverlay(color: Color(0xff326045)),
+            child: BlurredGradientOverlay(color: kBottomLeftOverlayColor),
           ),
           const Positioned(
             bottom: 0,
@@ -57,17 +58,22 @@ class _HomePageState extends State<HomePage> {
             left: 0,
             right: 0,
             child: BlurredGradientOverlay(
-              color: Color(0xff211F09),
+              color: kCenterTopOverlayColor,
               height: 100,
               width: 100,
               sigmaXY: 220,
             ),
           ),
-          PageView(controller: _pageController, children: const [
-            ExchangePage(),
-            DepositPage(),
-            OrderPage(),
-          ]),
+          SafeArea(
+            child: PageView(
+                physics: const NeverScrollableScrollPhysics(),
+                controller: _pageController,
+                children: const [
+                  ExchangePage(),
+                  DepositPage(),
+                  OrderPage(),
+                ]),
+          ),
           Positioned(
               bottom: 70,
               right: 0,
@@ -81,7 +87,7 @@ class _HomePageState extends State<HomePage> {
                 },
               )),
           AnimatedPositioned(
-            duration: Duration(milliseconds: 100),
+            duration: const Duration(milliseconds: 100),
             top: selectedTriNavBtn == 3 ? 200 : 0,
             bottom: selectedTriNavBtn == 2 ? -600 : -400,
             left: selectedTriNavBtn == 3 ? -200 : 0,

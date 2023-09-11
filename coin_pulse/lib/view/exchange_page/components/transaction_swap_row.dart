@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../config/themes/app_colors.dart';
+
 class TransactionSwapRow extends StatelessWidget {
   const TransactionSwapRow({super.key});
 
@@ -27,9 +29,7 @@ class TransactionSwapRow extends StatelessWidget {
           width: 150,
           decoration: const BoxDecoration(
             borderRadius: BorderRadius.all(Radius.circular(26)),
-            gradient: LinearGradient(
-              colors: [Color(0xffF6DE2B), Color(0xFFC0E96A)],
-            ),
+            gradient: LinearGradient(colors: kGradientButtonColor),
           ),
           child: const Text(
             "Swap",

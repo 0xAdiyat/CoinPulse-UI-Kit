@@ -18,6 +18,7 @@ class CCExchangeRow extends StatelessWidget {
     this.toCurrencyRate,
     this.toCcName,
     required this.innerContainerColor,
+    this.ccRateTxtColor,
   });
 
   final Widget ccIcon;
@@ -28,6 +29,7 @@ class CCExchangeRow extends StatelessWidget {
   final List<Color> outerOutlineColors;
   final String exchangeRateTxt;
   final bool isFromExchange;
+  final Color? ccRateTxtColor;
 
   @override
   Widget build(BuildContext context) {
@@ -47,6 +49,7 @@ class CCExchangeRow extends StatelessWidget {
             currencyRateToTxt: currencyRateToTxt,
             exchangeRateTxt: exchangeRateTxt,
             toCurrencyRate: toCurrencyRate,
+            ccRateTxtColor: ccRateTxtColor,
             isFromExchange: isFromExchange,
           ),
         ),

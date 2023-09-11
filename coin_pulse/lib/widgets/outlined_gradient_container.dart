@@ -11,18 +11,23 @@ class OutlinedGradientContainer extends StatelessWidget {
     required this.innerContainerColor,
     required this.child,
     required this.isTransform6,
+    this.height,
+    this.width,
+    this.childAlignment,
   });
 
   final Color outerContainerColor, innerContainerColor;
   final List<Color> outerOutlineColors;
   final Widget child;
   final bool isTransform6;
+  final double? height, width;
+  final Alignment? childAlignment;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 123,
-      width: 203,
+      height: height ?? 123,
+      width: width ?? 203,
       margin: const EdgeInsets.only(top: 10),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(30),
@@ -54,8 +59,8 @@ class OutlinedGradientContainer extends StatelessWidget {
               colors: outerOutlineColors,
               stops: const [.2, .6, .8, .1]),
           child: Container(
-            padding: const EdgeInsets.only(right: 15),
-            alignment: Alignment.centerRight,
+            padding: const EdgeInsets.symmetric(horizontal: 15),
+            alignment: childAlignment ?? Alignment.centerRight,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(26),
               gradient: LinearGradient(

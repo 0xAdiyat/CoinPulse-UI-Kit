@@ -209,8 +209,6 @@ H
 coin_pulse/lib/main.dart,e/3/e3d6b7ca7ab8896b8b790934d951ec3fa85129a6
 \
 ,coin_pulse/lib/view/home_page/home_page.dart,2/2/22a512500eb274d0972acdec02afd4799f49f70d
-]
--coin_pulse/lib/components/custom_outline.dart,3/2/3239937849d6914af3754fc2187c1aa73300c86b
 X
 (coin_pulse/lib/widgets/glowing_icon.dart,5/c/5c37174a5cbc4b26f1ab063ea17239347f556bff
 _
@@ -223,8 +221,6 @@ K
 coin_pulse/ios/Podfile.lock,6/d/6d0a74e2ed98436bb23e6906015ce883ffcc708a
 M
 coin_pulse/macos/Podfile.lock,1/6/16264091b0b274e98c52067baafe6ae593de2871
-g
-7coin_pulse/lib/components/blurred_gradient_overlay.dart,d/d/dd6a99c90635c334effc9bfad5b09d5ed17be573
 R
 "coin_pulse/assets/icons/bnb_cc.svg,b/3/b3e0019003e7e0582b3e38cea554c18e715ad1fd
 R
@@ -237,12 +233,8 @@ R
 "coin_pulse/assets/icons/xtz_cc.svg,2/3/23fc7500822e71827d3f9acafad2420b61a8e30b
 q
 Acoin_pulse/lib/view/exchange_page/components/cc_exchange_row.dart,d/0/d0c784f7a062f1ea506e462e120540e40d6fbeab
-}
-Mcoin_pulse/lib/view/exchange_page/components/outlined_gradient_container.dart,0/a/0ab4d0cc51a63607b0588a6ac7f492dfd878a909
 d
 4coin_pulse/lib/view/exchange_page/exchange_page.dart,7/f/7fc69c303141adaf27cdb15bdc88e7974aa08ca7
-Z
-*coin_pulse/lib/config/const/app_const.dart,9/d/9d7fdc41ed7ee737363864b55bb24d1e0a323b38
 v
 Fcoin_pulse/lib/view/exchange_page/components/transaction_swap_row.dart,3/d/3dd161b617f93ec43e0cc25df0d038d21cd41c9f
 q
@@ -253,3 +245,25 @@ p
 @coin_pulse/lib/view/home_page/components/triangle_container.dart,9/c/9cd84aee8889dcedfe31ae2864829fb16da4a2ef
 ^
 .coin_pulse/lib/view/order_page/order_page.dart,6/f/6f0e0f2f2ec4e8feeb4d12da34f15a7219771ba2
+S
+#coin_pulse/assets/icons/deposit.svg,4/4/44de673f3c2b9efb68e4540cf01048683003dfac
+T
+$coin_pulse/assets/icons/exchange.svg,a/7/a7f815fbc9088432b196c1708ab08a2b3edd5639
+R
+"coin_pulse/assets/icons/orders.svg,1/a/1ab3bc4dffc0811ea8fadf3698b85f1cd025db0f
+V
+&coin_pulse/assets/icons/swap_arrow.svg,3/c/3c02f10c37732bb4f752a4e4e5a79b18e5f41f67
+T
+$coin_pulse/assets/icons/withdraw.svg,c/f/cf463fa23bb0ddbe2edbe8c76e5b802fe2a7373f
+d
+4coin_pulse/lib/widgets/blurred_gradient_overlay.dart,9/f/9f6064491c0c14394063b7df540c8c7a90ec45d2
+Z
+*coin_pulse/lib/widgets/custom_outline.dart,4/9/494b272e417c5aca07d09ced83017586028b5cd7
+q
+Acoin_pulse/lib/view/exchange_page/components/cc_rate_details.dart,e/b/ebbb3998e3737708c3e5d939948db65679c6ff06
+^
+.coin_pulse/lib/config/constants/app_const.dart,b/1/b1ca1cc0edbf65885bb0c62b498775661d1b7974
+g
+7coin_pulse/lib/widgets/outlined_gradient_container.dart,9/4/94615dac85987c6a6a8bff00af0a7c90fb5b4e3c
+b
+2coin_pulse/lib/view/deposit_page/deposit_page.dart,8/2/829395e635c76ea552f48cfa8acb23f0314d6783

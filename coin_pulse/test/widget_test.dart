@@ -9,12 +9,11 @@ import 'package:coin_pulse/app.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:coin_pulse/main.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget( CoinPulseApp());
+    await tester.pumpWidget( const CoinPulseApp());
 
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);

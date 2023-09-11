@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
+import '../../../config/themes/app_colors.dart';
 import '../../../widgets/glowing_text_widget.dart';
 
 class TriangleContainer extends StatelessWidget {
@@ -18,6 +19,8 @@ class TriangleContainer extends StatelessWidget {
   final int selectedIndex;
   final int currentIndex;
   final String navBtnText;
+
+  // Define color constants
 
   @override
   Widget build(BuildContext context) {
@@ -99,20 +102,20 @@ class TriangleContainer extends StatelessWidget {
                   : Alignment.topLeft,
           colors: isSelectedNav
               ? [
-                  const Color(0xff6DFB8D),
-                  const Color(0xff67FF89),
-                  const Color(0xffABF5BA),
-                  const Color(0xff9CFCB0),
-                  const Color(0xff67FE85),
+                  kGreenGradientStart,
+                  kGreenGradientMiddle,
+                  kGreenGradientEnd,
+                  kGreenGradientSecondary,
+                  kGreenGradientHighlight,
                 ]
               : currentIndex != 0
                   ? [
-                      Colors.black,
-                      const Color(0xff3B5F43),
+                      kPrimaryColor,
+                      kDarkGreen,
                     ]
                   : [
-                      const Color(0xff3B5F43),
-                      Colors.black,
+                      kDarkGreen,
+                      kPrimaryColor,
                     ],
         ),
       ),
@@ -130,7 +133,7 @@ class TriangleContainer extends StatelessWidget {
                       spreadRadius: 5),
                 ]
               : [],
-          color: Colors.black,
+          color: kPrimaryColor,
           borderRadius: triangleBorderRadius,
         ),
         child: Column(
@@ -146,10 +149,7 @@ class TriangleContainer extends StatelessWidget {
               height: 30,
               width: 30,
               colorFilter: ColorFilter.mode(
-                  isSelectedNav
-                      ? const Color(0xffD3FCDD)
-                      : const Color(0xff5D7562),
-                  BlendMode.srcIn),
+                  isSelectedNav ? kLightGreen : kDarkGray, BlendMode.srcIn),
             ),
             const SizedBox(
               height: 5,
@@ -157,11 +157,11 @@ class TriangleContainer extends StatelessWidget {
             isSelectedNav
                 ? GlowingTextWidget(
                     text: navBtnText,
-                    glowColor: Colors.greenAccent,
-                    textColor: const Color(0xff7ef39b),
+                    glowColor: kGlowingText,
+                    textColor: kGlowingTextColor,
                     fontSize: 14)
                 : AnimatedDefaultTextStyle(
-                    style: const TextStyle(color: Color(0xff4E5A54)),
+                    style: const TextStyle(color: kTextDefaultColor),
                     duration: const Duration(milliseconds: 100),
                     child: Text(
                       navBtnText,
