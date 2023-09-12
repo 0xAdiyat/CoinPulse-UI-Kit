@@ -3,12 +3,45 @@ import 'package:coin_pulse/config/constants/app_const.dart';
 import 'package:coin_pulse/widgets/glowing_icon.dart';
 import 'package:coin_pulse/widgets/glowing_text_widget.dart';
 import 'package:coin_pulse/widgets/outlined_gradient_container.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-class DepositPage extends StatelessWidget {
+class DepositPage extends StatefulWidget {
   const DepositPage({super.key});
+
+  @override
+  State<DepositPage> createState() => _DepositPageState();
+}
+
+class _DepositPageState extends State<DepositPage> {
+  final _scrollController = ScrollController();
+
+  @override
+  void initState() {
+    super.initState();
+    _scrollController.addListener(_onScroll);
+  }
+
+  @override
+  void dispose() {
+    _scrollController
+      ..removeListener(_onScroll)
+      ..dispose();
+    super.dispose();
+  }
+
+  void _onScroll() {
+    if (_isBottom) {
+      print('Yo');
+    }
+  }
+
+  bool get _isBottom {
+    if (!_scrollController.hasClients) return false;
+    final maxScroll = _scrollController.position.maxScrollExtent;
+    final currentScroll = _scrollController.offset;
+    return currentScroll >= (maxScroll * 0.9);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -252,7 +285,7 @@ class DepositPage extends StatelessWidget {
                     ],
                   ),
                   Icon(
-                    CupertinoIcons.doc_on_clipboard,
+                    Icons.copy_rounded,
                     size: 25,
                     color: const Color(0xffB3BDE0).withOpacity(0.3),
                   )

@@ -29,6 +29,7 @@ class CCExchangeRow extends StatelessWidget {
   final List<Color> outerOutlineColors;
   final String exchangeRateTxt;
   final bool isFromExchange;
+
   final Color? ccRateTxtColor;
 
   @override
@@ -41,7 +42,7 @@ class CCExchangeRow extends StatelessWidget {
           outerContainerColor: outerContainerColor,
           outerOutlineColors: outerOutlineColors,
           innerContainerColor: innerContainerColor,
-          isTransform6: true,
+          isTransform6: isFromExchange ? true : false,
           child: CCRateDetails(
             fromCcName: fromCcName ?? "",
             toCcName: toCcName ?? "",
