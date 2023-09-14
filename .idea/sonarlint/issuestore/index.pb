@@ -267,3 +267,5 @@ g
 7coin_pulse/lib/widgets/outlined_gradient_container.dart,9/4/94615dac85987c6a6a8bff00af0a7c90fb5b4e3c
 b
 2coin_pulse/lib/view/deposit_page/deposit_page.dart,8/2/829395e635c76ea552f48cfa8acb23f0314d6783
+`
+0coin_pulse/lib/config/constants/size_config.dart,c/5/c526f7a34aef932982b957ce2d174c3197b875ea

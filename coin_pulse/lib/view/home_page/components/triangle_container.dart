@@ -23,7 +23,6 @@ class TriangleContainer extends StatelessWidget {
   final String navBtnText;
   final double? extraVerticalSpacing;
 
-  // Define color constants
 
   @override
   Widget build(BuildContext context) {

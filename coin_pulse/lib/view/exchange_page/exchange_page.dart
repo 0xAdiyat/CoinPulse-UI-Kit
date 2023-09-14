@@ -1,3 +1,4 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:coin_pulse/config/config.dart';
 import 'package:coin_pulse/config/constants/app_const.dart';
 import 'package:flutter/cupertino.dart';
@@ -30,17 +31,19 @@ class ExchangePage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          CCExchangeRow(
-            ccIcon: fromCCIconWidget,
-            fromCcName: "BNB",
-            ccContainerColor: kDarkBlueColor,
-            currencyRateFromTxt: "1",
-            currencyRateToTxt: '35,394',
-            exchangeRateTxt: '567',
-            outerContainerColor: kBlueGradientOuterContainerColor,
-            outerOutlineColors: kBlueGradientOuterLineColors,
-            innerContainerColor: kBlueGradientInnerContainerColor,
-            isFromExchange: true,
+          FlipInX(
+            child: CCExchangeRow(
+              ccIcon: fromCCIconWidget,
+              fromCcName: "BNB",
+              ccContainerColor: kDarkBlueColor,
+              currencyRateFromTxt: "1",
+              currencyRateToTxt: '35,394',
+              exchangeRateTxt: '567',
+              outerContainerColor: kBlueGradientOuterContainerColor,
+              outerOutlineColors: kBlueGradientOuterLineColors,
+              innerContainerColor: kBlueGradientInnerContainerColor,
+              isFromExchange: true,
+            ),
           ),
           const SizedBox(
             height: 15,
@@ -59,22 +62,24 @@ class ExchangePage extends StatelessWidget {
           const SizedBox(
             height: 15,
           ),
-          CCExchangeRow(
-            ccIcon: toCCIconWidget,
-            toCcName: "XTZ",
-            ccContainerColor: kDarkOrangeColor,
-            exchangeRateTxt: '20 069',
-            ccRateTxtColor: kDarkOrangeTextColor,
-            outerContainerColor: kOrangeGradientOuterContainerColor,
-            outerOutlineColors: kOrangeGradientOuterLineColors,
-            isFromExchange: false,
-            toCurrencyRate: '40,717.68',
-            innerContainerColor: kOrangeGradientInnerContainerColor,
+          FlipInX(
+            child: CCExchangeRow(
+              ccIcon: toCCIconWidget,
+              toCcName: "XTZ",
+              ccContainerColor: kDarkOrangeColor,
+              exchangeRateTxt: '20 069',
+              ccRateTxtColor: kDarkOrangeTextColor,
+              outerContainerColor: kOrangeGradientOuterContainerColor,
+              outerOutlineColors: kOrangeGradientOuterLineColors,
+              isFromExchange: false,
+              toCurrencyRate: '40,717.68',
+              innerContainerColor: kOrangeGradientInnerContainerColor,
+            ),
           ),
           const SizedBox(
             height: 60,
           ),
-          const TransactionSwapRow(),
+          FadeIn(child: const TransactionSwapRow()),
           const SizedBox(
             height: 40,
           ),

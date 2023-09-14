@@ -1,3 +1,4 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:coin_pulse/config/config.dart';
 import 'package:coin_pulse/config/constants/app_const.dart';
 import 'package:coin_pulse/view/deposit_page/deposit_page.dart';
@@ -85,13 +86,15 @@ class _HomePageState extends State<HomePage> {
               height: selectedTriNavBtn == 1
                   ? 300 + (5 * kTriCircularSpacing)
                   : 300 + (2 * kTriCircularSpacing),
-              child: TriCircularNavBar(
-                currentSelectedNavButton: (int value) {
-                  setState(() {
-                    selectedTriNavBtn = value;
-                    _pageController!.jumpToPage(selectedTriNavBtn);
-                  });
-                },
+              child: FadeIn(
+                child: TriCircularNavBar(
+                  currentSelectedNavButton: (int value) {
+                    setState(() {
+                      selectedTriNavBtn = value;
+                      _pageController!.jumpToPage(selectedTriNavBtn);
+                    });
+                  },
+                ),
               ),
             ),
           ),

@@ -1,3 +1,4 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:coin_pulse/view/exchange_page/components/cc_rate_details.dart';
 import 'package:flutter/material.dart';
 
@@ -72,10 +73,12 @@ class CCExchangeRow extends StatelessWidget {
           child: IconButton(onPressed: () {}, icon: ccIcon),
         ),
         const SizedBox(width: 15),
-        Text(
-          fromCcName ?? toCcName!,
-          textAlign: TextAlign.end,
-          style: const TextStyle(fontSize: 30, color: Colors.white),
+        FadeInDownBig(
+          child: Text(
+            fromCcName ?? toCcName!,
+            textAlign: TextAlign.end,
+            style: const TextStyle(fontSize: 30, color: Colors.white),
+          ),
         )
       ],
     );

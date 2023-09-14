@@ -1,3 +1,4 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:coin_pulse/config/config.dart';
 import 'package:flutter/material.dart';
 
@@ -31,30 +32,34 @@ class CCRateDetails extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.end,
       children: [
-        Text(
-          isFromExchange
-              ? AppStrings.getCurrencyRateTextFormat(
-                  currencyRateFromTxt: currencyRateFromTxt,
-                  fromCcName: fromCcName,
-                  currencyRateToTxt: currencyRateToTxt,
-                  toCcName: toCcName)
-              : AppStrings.getCurrencyRateTextFormat(
-                  toCurrencyRate: toCurrencyRate),
-          textAlign: TextAlign.end,
-          style: TextStyle(
-              fontSize: 14,
-              color: ccRateTxtColor ?? kDarkBlueTextColor,
-              fontWeight: FontWeight.bold),
+        FlipInX(
+          child: Text(
+            isFromExchange
+                ? AppStrings.getCurrencyRateTextFormat(
+                    currencyRateFromTxt: currencyRateFromTxt,
+                    fromCcName: fromCcName,
+                    currencyRateToTxt: currencyRateToTxt,
+                    toCcName: toCcName)
+                : AppStrings.getCurrencyRateTextFormat(
+                    toCurrencyRate: toCurrencyRate),
+            textAlign: TextAlign.end,
+            style: TextStyle(
+                fontSize: 14,
+                color: ccRateTxtColor ?? kDarkBlueTextColor,
+                fontWeight: FontWeight.bold),
+          ),
         ),
         const SizedBox(
           height: 8,
         ),
-        GlowingTextWidget(
-          fontWeight: FontWeight.bold,
-          fontSize: 23,
-          text: exchangeRateTxt,
-          glowColor: Colors.white.withOpacity(0.7),
-          textColor: Colors.white,
+        Flash(
+          child: GlowingTextWidget(
+            fontWeight: FontWeight.bold,
+            fontSize: 23,
+            text: exchangeRateTxt,
+            glowColor: Colors.white.withOpacity(0.7),
+            textColor: Colors.white,
+          ),
         ),
       ],
     );
