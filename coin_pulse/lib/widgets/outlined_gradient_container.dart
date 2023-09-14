@@ -3,6 +3,8 @@ import 'dart:math' as math;
 import 'package:coin_pulse/widgets/custom_outline.dart';
 import 'package:flutter/material.dart';
 
+import '../config/constants/size_config.dart';
+
 class OutlinedGradientContainer extends StatelessWidget {
   const OutlinedGradientContainer({
     super.key,
@@ -26,8 +28,8 @@ class OutlinedGradientContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: height ?? 123,
-      width: width ?? 203,
+      height: height ?? SizeConfig.screenHeight * 0.1325,
+      width: width ?? SizeConfig.screenHeight * 0.217,
       margin: const EdgeInsets.only(top: 10),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(30),

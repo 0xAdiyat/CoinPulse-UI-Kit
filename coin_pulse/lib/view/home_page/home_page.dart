@@ -17,7 +17,6 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   int selectedTriNavBtn = 0;
-
   PageController? _pageController;
 
   @override
@@ -36,8 +35,6 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    var screenHeight = MediaQuery.sizeOf(context).height;
-
     return Scaffold(
       backgroundColor: kPrimaryColor,
       extendBody: true,
@@ -77,11 +74,17 @@ class _HomePageState extends State<HomePage> {
                 ]),
           ),
           AnimatedPositioned(
-              curve: Curves.easeInCubic,
-              duration: const Duration(milliseconds: 200),
-              bottom: selectedTriNavBtn == 1 ? -150 : 70,
-              right: 0,
-              left: 0,
+            curve: Curves.easeInCubic,
+            duration: const Duration(milliseconds: kAnimationDuration ~/ 2),
+            bottom: selectedTriNavBtn == 1 ? -150 : 70,
+            right: 0,
+            left: 0,
+            child: AnimatedContainer(
+              curve: Curves.easeInOutCubicEmphasized,
+              duration: const Duration(milliseconds: kAnimationDuration),
+              height: selectedTriNavBtn == 1
+                  ? 300 + (5 * kTriCircularSpacing)
+                  : 300 + (2 * kTriCircularSpacing),
               child: TriCircularNavBar(
                 currentSelectedNavButton: (int value) {
                   setState(() {
@@ -89,7 +92,9 @@ class _HomePageState extends State<HomePage> {
                     _pageController!.jumpToPage(selectedTriNavBtn);
                   });
                 },
-              )),
+              ),
+            ),
+          ),
           AnimatedPositioned(
             duration: const Duration(milliseconds: kAnimationDuration),
             top: selectedTriNavBtn == 3

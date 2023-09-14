@@ -71,9 +71,7 @@ class CCExchangeRow extends StatelessWidget {
           ),
           child: IconButton(onPressed: () {}, icon: ccIcon),
         ),
-        const SizedBox(
-          width: 15,
-        ),
+        const SizedBox(width: 15),
         Text(
           fromCcName ?? toCcName!,
           textAlign: TextAlign.end,
