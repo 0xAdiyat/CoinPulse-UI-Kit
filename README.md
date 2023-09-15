@@ -28,9 +28,10 @@ Exchange Screen         |  Deposit Screen       |   Deposit 2 Screen
 | ---------------------------------------------------------------------- | --------------------------------------------- |
 | [**GetX**](https://pub.dev/packages/get)                           | State Management                              |
 | [**Google-Fonts**](https://pub.dev/packages/google_fonts)                        | A Flutter package to use fonts from fonts.google.com |
-| [**Flutter-Svg**](https://pub.dev/packages/flutter_svg)                      | An SVG rendering and widget library for Flutter, which allows painting and displaying Scalable Vector Graphics 1.1 files |
+| [**Flutter-Svg**](https://pub.dev/packages/flutter_svg)                      | Provides SVG rendering and widget library for Flutter, which allows painting and displaying Scalable Vector Graphics 1.1 files |
 | [**Text-Transformation-Animation**](https://pub.dev/packages/text_transformation_animation)                                | Provides text transformation animation.               |
-| [**Animate-Do**](https://pub.dev/packages/animate_do) | Beautiful animations inspired on Animate.css, every animation is a customizable widget        |
+| [**Animate-Do**](https://pub.dev/packages/animate_do) | Provides beautiful animations inspired on Animate.css, every animation is a customizable widget|
+| [**Flutter-Launcher-Icons**](https://pub.dev/packages/flutter_launcher_icons) | A package which simplifies the task of updating your Flutter app's launcher icon |
 
 
 ## Usage
