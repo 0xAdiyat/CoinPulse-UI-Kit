@@ -293,3 +293,5 @@ l
 <coin_pulse/lib/view/exchange_page/components/components.dart,9/2/923fdabf64322641955f2955751d89e088716c7c
 h
 8coin_pulse/lib/view/home_page/components/components.dart,e/f/ef0d4b2d01c5d24f0d7b6fe7657177290dbc2eed
+t
+Dcoin_pulse/lib/view/deposit_page/components/dynamic_blurred_box.dart,5/b/5ba09d7c6f615e33cc93bac31b4eea7a8368f719
