@@ -2,7 +2,7 @@
 
 <h1 align="left">CoinPulse - Wallet</h1>
 
-**CoinPulse - Your gateway to a colorful financial future.**
+**CoinPulse - Your gateway to a colorful financial future**
 
 ![CoinPulse-Thumbnail](https://github.com/0xAdiyat/CoinPulse-UI-Kit/assets/67780459/d93b9534-a806-4f9f-bd8c-ab4846ce0280)
 
