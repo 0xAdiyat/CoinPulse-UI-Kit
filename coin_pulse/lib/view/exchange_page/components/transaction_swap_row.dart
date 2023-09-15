@@ -1,4 +1,3 @@
-import 'package:coin_pulse/config/constants/app_const.dart';
 import 'package:flutter/material.dart';
 import 'package:text_transformation_animation/text_transformation_animation.dart';
 
@@ -21,6 +20,7 @@ class _TransactionSwapRowState extends State<TransactionSwapRow> {
       children: [
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text(
               "Transaction cost:",
@@ -29,7 +29,7 @@ class _TransactionSwapRowState extends State<TransactionSwapRow> {
             TextTransformationAnimation(
               text: _costTxt,
               style: const TextStyle(fontSize: 24),
-              duration: const Duration(milliseconds: kAnimationDuration),
+              duration: const Duration(milliseconds: 200),
             ),
           ],
         ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 const kPrimaryColor = Colors.black;
+final kSecondaryIconColor = const Color(0xffB3BDE0).withOpacity(0.2);
 const kGradientButtonColor = [Color(0xffF6DE2B), Color(0xFFC0E96A)];
 
 // OVERLAY COLORS

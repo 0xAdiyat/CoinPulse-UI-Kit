@@ -20,6 +20,7 @@ class CCExchangeRow extends StatelessWidget {
     this.toCcName,
     required this.innerContainerColor,
     this.ccRateTxtColor,
+    this.swipedPosition = false,
   });
 
   final Widget ccIcon;
@@ -30,6 +31,7 @@ class CCExchangeRow extends StatelessWidget {
   final List<Color> outerOutlineColors;
   final String exchangeRateTxt;
   final bool isFromExchange;
+  final bool swipedPosition;
 
   final Color? ccRateTxtColor;
 
@@ -73,7 +75,7 @@ class CCExchangeRow extends StatelessWidget {
           child: IconButton(onPressed: () {}, icon: ccIcon),
         ),
         const SizedBox(width: 15),
-        FadeInDownBig(
+        FadeIn(
           child: Text(
             fromCcName ?? toCcName!,
             textAlign: TextAlign.end,
