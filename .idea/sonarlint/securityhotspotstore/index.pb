@@ -269,3 +269,27 @@ b
 2coin_pulse/lib/view/deposit_page/deposit_page.dart,8/2/829395e635c76ea552f48cfa8acb23f0314d6783
 `
 0coin_pulse/lib/config/constants/size_config.dart,c/5/c526f7a34aef932982b957ce2d174c3197b875ea
+P
+ coin_pulse/assets/icons/card.svg,f/2/f21ec35c19a4c1fafb6d66e62e63d61909cd201a
+W
+'coin_pulse/assets/icons/tick_circle.svg,2/d/2d67f63829d81daad4ea03661681a85d6c122f4b
+p
+@coin_pulse/lib/view/deposit_page/components/gradient_appbar.dart,9/1/91328b4394681c2061806ac071eb030fca67f2cc
+y
+Icoin_pulse/lib/view/deposit_page/components/gradient_title_container.dart,d/1/d1650ef4e8a1c0d05b6bf01e045f5e76cb26d721
+p
+@coin_pulse/lib/view/deposit_page/components/payment_methods.dart,f/4/f42862daeac9167cc4efbcf3fb20036bf1ac7181
+p
+@coin_pulse/lib/view/deposit_page/components/container_title.dart,b/2/b2af8e6e53cd68af0421eb4aba5cf9cf927f0622
+k
+;coin_pulse/lib/view/deposit_page/components/components.dart,4/7/47a90de4026908075c817d0783a62c8b7de72556
+[
++coin_pulse/assets/icons/crypto_currency.svg,8/3/8306bd35606d395ccdbdedb738e134510f0093d8
+P
+ coin_pulse/assets/icons/copy.svg,9/3/9317ddaddff8a426436d2cac370ce4bcab8760e9
+W
+'coin_pulse/assets/icons/arrow_right.svg,b/0/b020e0e7e948beea1356e96b858a4b7435a5a79f
+l
+<coin_pulse/lib/view/exchange_page/components/components.dart,9/2/923fdabf64322641955f2955751d89e088716c7c
+h
+8coin_pulse/lib/view/home_page/components/components.dart,e/f/ef0d4b2d01c5d24f0d7b6fe7657177290dbc2eed

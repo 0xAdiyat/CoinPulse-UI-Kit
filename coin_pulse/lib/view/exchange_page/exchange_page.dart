@@ -68,7 +68,7 @@ class _ExchangePageState extends State<ExchangePage> {
                 swipedPosition: swipePosition,
                 ccIcon: fromCCIconWidget,
                 fromCcName: "BNB",
-                ccContainerColor: kDarkBlueColor,
+                ccContainerColor: kDeepOrangeColor,
                 currencyRateFromTxt: "1",
                 currencyRateToTxt: '35,394',
                 exchangeRateTxt: '567',
@@ -126,7 +126,7 @@ class _ExchangePageState extends State<ExchangePage> {
               child: CCExchangeRow(
                 ccIcon: toCCIconWidget,
                 toCcName: "XTZ",
-                ccContainerColor: kDarkOrangeColor,
+                ccContainerColor: kDeepBlueColor,
                 exchangeRateTxt: '20 069',
                 ccRateTxtColor: kDarkOrangeTextColor,
                 outerContainerColor: kOrangeGradientOuterContainerColor,

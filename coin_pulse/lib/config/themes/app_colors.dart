@@ -85,8 +85,8 @@ const kTransparentGradientOuterLineColors = [
   Colors.transparent
 ];
 
-const kDarkBlueColor = Color(0xff21200B);
-const kDarkOrangeColor = Color(0xff0B2223);
+const kDeepOrangeColor = Color(0xff21200B);
+const kDeepBlueColor = Color(0xff0B2223);
 
 const kDarkBlueTextColor = Color(0xff7B939A);
 const kDarkOrangeTextColor = Color(0xff5F5F56);

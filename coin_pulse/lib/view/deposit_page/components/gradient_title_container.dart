@@ -2,21 +2,22 @@ part of 'components.dart';
 
 class GradientTitleContainer extends StatelessWidget {
   final String title, innerText, downText;
+  final bool enableFirstIcon;
 
   const GradientTitleContainer({
     super.key,
     required this.title,
     required this.innerText,
     required this.downText,
+    this.enableFirstIcon = false,
   });
 
   @override
   Widget build(BuildContext context) {
-    bool isWallet = title.contains("Wallet");
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        ContainerTitle(title: title),
+        ContainerText(title: title),
         OutlinedGradientContainer(
           childAlignment: Alignment.centerLeft,
           outerContainerColor: kBlueGradientOuterContainerColor,
@@ -30,18 +31,27 @@ class GradientTitleContainer extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  if (isWallet)
-                    GlowingIcon(
-                        glowColor: Colors.white,
-                        child: SvgPicture.asset(
-                          AppIcons.btcCc,
-                          height: 30,
-                        )),
-                  if (isWallet)
-                    const SizedBox(
-                      width: 20,
+                  if (enableFirstIcon)
+                    Container(
+                      height: 40,
+                      width: 40,
+                      padding: const EdgeInsets.all(10),
+                      decoration: const BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: kDeepOrangeColor,
+                      ),
+                      child: GlowingIcon(
+                          glowColor: Colors.white,
+                          child: SvgPicture.asset(
+                            AppIcons.btcCc,
+                            height: 20,
+                          )),
                     ),
-                  isWallet
+                  if (enableFirstIcon)
+                    const SizedBox(
+                      width: 10,
+                    ),
+                  enableFirstIcon
                       ? Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -65,7 +75,7 @@ class GradientTitleContainer extends StatelessWidget {
                         ),
                 ],
               ),
-              isWallet
+              enableFirstIcon
                   ? Container(
                       height: 25,
                       alignment: Alignment.center,

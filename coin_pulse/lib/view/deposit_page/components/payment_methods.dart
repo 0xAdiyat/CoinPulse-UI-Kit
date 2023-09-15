@@ -7,33 +7,39 @@ class PaymentMethods extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return OutlinedGradientContainer(
-      childAlignment: Alignment.centerLeft,
-      outerContainerColor: kOrangeGradientOuterContainerColor,
-      outerOutlineColors: kOrangeGradientOuterLineColors,
-      innerContainerColor: kOrangeGradientInnerContainerColor,
-      height: 160,
-      width: double.infinity,
-      isTransform6: true,
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          buildPaymentMethodRow(
-              iconPath: AppIcons.cryptoCurrency,
-              label: "Cryptocurrency",
-              endIconPath: AppIcons.tickCircle),
-          Padding(
-            padding: const EdgeInsets.only(left: 45.0),
-            child: Container(
-              height: 0.3,
-              color: Colors.white24,
-            ),
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const ContainerText(title: "Payment Method"),
+        OutlinedGradientContainer(
+          childAlignment: Alignment.centerLeft,
+          outerContainerColor: kOrangeGradientOuterContainerColor,
+          outerOutlineColors: kOrangeGradientOuterLineColors,
+          innerContainerColor: kOrangeGradientInnerContainerColor,
+          height: 160,
+          width: double.infinity,
+          isTransform6: true,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              buildPaymentMethodRow(
+                  iconPath: AppIcons.cryptoCurrency,
+                  label: "Cryptocurrency",
+                  endIconPath: AppIcons.tickCircle),
+              Padding(
+                padding: const EdgeInsets.only(left: 45.0),
+                child: Container(
+                  height: 0.3,
+                  color: Colors.white24,
+                ),
+              ),
+              buildPaymentMethodRow(
+                  iconPath: AppIcons.card, label: "Debit or Credit card"),
+            ],
           ),
-          buildPaymentMethodRow(
-              iconPath: AppIcons.card, label: "Debit or Credit card"),
-        ],
-      ),
+        ),
+      ],
     );
   }
 
@@ -64,10 +70,13 @@ class PaymentMethods extends StatelessWidget {
           ],
         ),
         if (endIconPath!.isNotEmpty)
-          SvgPicture.asset(
-            endIconPath,
-            height: 25,
-            colorFilter: ColorFilter.mode(kSecondaryIconColor, BlendMode.srcIn),
+          Flash(
+            child: SvgPicture.asset(
+              endIconPath,
+              height: 25,
+              colorFilter:
+                  ColorFilter.mode(kSecondaryIconColor, BlendMode.srcIn),
+            ),
           )
       ],
     );

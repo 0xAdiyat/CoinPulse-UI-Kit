@@ -1,9 +1,15 @@
 part of 'components.dart';
 
-class ContainerTitle extends StatelessWidget {
+class ContainerText extends StatelessWidget {
   final String title;
+  final Color? color;
+  final double fontSize;
 
-  const ContainerTitle({super.key, required this.title});
+  const ContainerText(
+      {super.key,
+      required this.title,
+      this.color = Colors.white,
+      this.fontSize = 18});
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +17,7 @@ class ContainerTitle extends StatelessWidget {
       padding: const EdgeInsets.only(left: 10.0),
       child: Text(
         title,
-        style: const TextStyle(fontSize: 18),
+        style: TextStyle(fontSize: fontSize, color: color),
       ),
     );
   }
