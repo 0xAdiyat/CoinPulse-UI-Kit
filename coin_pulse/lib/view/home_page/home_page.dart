@@ -2,12 +2,12 @@ import 'package:animate_do/animate_do.dart';
 import 'package:coin_pulse/config/config.dart';
 import 'package:coin_pulse/config/constants/app_const.dart';
 import 'package:coin_pulse/view/deposit_page/deposit_page.dart';
-import 'package:coin_pulse/view/home_page/components/tri_circular_navbar.dart';
 import 'package:flutter/material.dart';
 
 import '../../widgets/blurred_gradient_overlay.dart';
 import '../exchange_page/exchange_page.dart';
 import '../order_page/order_page.dart';
+import 'components/components.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});

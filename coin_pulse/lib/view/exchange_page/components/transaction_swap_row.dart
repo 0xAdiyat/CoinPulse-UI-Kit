@@ -1,7 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:text_transformation_animation/text_transformation_animation.dart';
-
-import '../../../config/themes/app_colors.dart';
+part of 'components.dart';
 
 class TransactionSwapRow extends StatefulWidget {
   const TransactionSwapRow({super.key});

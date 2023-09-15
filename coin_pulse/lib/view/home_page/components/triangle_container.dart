@@ -1,9 +1,4 @@
-import 'package:coin_pulse/config/constants/app_const.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
-
-import '../../../config/themes/app_colors.dart';
-import '../../../widgets/glowing_text_widget.dart';
+part of 'components.dart';
 
 class TriangleContainer extends StatelessWidget {
   const TriangleContainer({
@@ -22,7 +17,6 @@ class TriangleContainer extends StatelessWidget {
   final int currentIndex;
   final String navBtnText;
   final double? extraVerticalSpacing;
-
 
   @override
   Widget build(BuildContext context) {

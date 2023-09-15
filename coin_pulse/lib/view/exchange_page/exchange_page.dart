@@ -6,8 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 import '../../widgets/glowing_icon.dart';
-import 'components/cc_exchange_row.dart';
-import 'components/transaction_swap_row.dart';
+import 'components/components.dart';
 
 class ExchangePage extends StatefulWidget {
   const ExchangePage({

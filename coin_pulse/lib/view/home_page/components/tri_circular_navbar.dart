@@ -1,9 +1,4 @@
-import 'package:coin_pulse/config/res/assets/app_icons.dart';
-import 'package:coin_pulse/view/home_page/components/tri_circular_nav_button.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-
-import '../../../config/constants/app_const.dart';
+part of 'components.dart';
 
 class TriCircularNavBar extends StatefulWidget {
   final ValueChanged<int> currentSelectedNavButton;

@@ -1,8 +1,4 @@
-import 'package:animate_do/animate_do.dart';
-import 'package:coin_pulse/view/exchange_page/components/cc_rate_details.dart';
-import 'package:flutter/material.dart';
-
-import '../../../widgets/outlined_gradient_container.dart';
+part of 'components.dart';
 
 class CCExchangeRow extends StatelessWidget {
   const CCExchangeRow({

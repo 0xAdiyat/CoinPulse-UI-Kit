@@ -1,8 +1,4 @@
-import 'package:animate_do/animate_do.dart';
-import 'package:coin_pulse/config/config.dart';
-import 'package:flutter/material.dart';
-
-import '../../../widgets/glowing_text_widget.dart';
+part of 'components.dart';
 
 class CCRateDetails extends StatelessWidget {
   const CCRateDetails({
