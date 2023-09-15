@@ -9,6 +9,7 @@
 
 ## Preview 📽️
 
+
 https://github.com/0xAdiyat/CoinPulse-UI-Kit/assets/67780459/4b91a7cd-3ea0-4f00-a46f-0617732f4da2
 
 ## Disclaimer 🚧
