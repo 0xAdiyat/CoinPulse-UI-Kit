@@ -9,8 +9,8 @@
 
 ## Preview 📽️
 
+https://github.com/0xAdiyat/CoinPulse-UI-Kit/assets/67780459/1f4d70aa-dc3f-4cb4-a223-ccb10121d753
 
-https://github.com/0xAdiyat/CoinPulse-UI-Kit/assets/67780459/4b91a7cd-3ea0-4f00-a46f-0617732f4da2
 
 ## Disclaimer 🚧
 
@@ -36,15 +36,17 @@ Exchange Screen         |  Deposit Screen       |   Deposit 2 Screen
 ## Usage
 
 - install flutter engine -> https://docs.flutter.dev/get-started/install
-- tap command `flutter run` in the root folder of the project
+- in cmd type `flutter run` in the root folder of the project
 
 ## Contribution
-If you wish to contribute a change to any of the existing feature or add new in this repo,
+If you wish to contribute a change to any of the existing features or add new to this repo,
 please feel free to contribute,
-and send a [pull request](https://github.com/0xAdiyat/CoinPulse-UI-Kit/pulls). I welcome and encourage all pull requests. It usually will take me within 24-48 hours to respond to any issue or request.
+and send a [pull request](https://github.com/0xAdiyat/CoinPulse-UI-Kit/pulls). I welcome and encourage all pull requests. It usually takes me within 24-48 hours to respond to any issue or request.
+
+## Credit
+The design was inspired by [Dribble](https://dribbble.com/shots/16275745-Investment-App). Bcz of not having the design file & lacking time I couldn't bring out the exact UI.
 
 ## Author
-
 @0xAdiyat
 
 
