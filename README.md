@@ -13,7 +13,7 @@ https://github.com/0xAdiyat/CoinPulse-UI-Kit/assets/67780459/4b91a7cd-3ea0-4f00-
 
 ## Disclaimer 🚧
 
-The project is under development,`feel free to star the project` if you want to support me and be notify to the major update of the development. Feel free to contribute.
+The project is under development, `feel free to star the project` if you want to support me and be notify to the major update of the development. And also any contributions are welcome.
 
 ## Screenshots
 
@@ -22,6 +22,14 @@ Exchange Screen         |  Deposit Screen       |   Deposit 2 Screen
 ![Exchange Screen](https://github.com/0xAdiyat/CoinPulse-UI-Kit/assets/67780459/c73f9788-e806-4b8a-9432-15c4aa05f5a9)|![Deposit Page](https://github.com/0xAdiyat/CoinPulse-UI-Kit/assets/67780459/cd38cd37-657c-4298-b9e5-b7b2ad3fc9cf)|![Deposit 2 0 Screen](https://github.com/0xAdiyat/CoinPulse-UI-Kit/assets/67780459/c4fc36a8-ed60-4e26-a892-463ab5c1ee05)|
 
 
+## Usage
+
+- install flutter engine -> https://docs.flutter.dev/get-started/install
+- tap command `flutter run` in the root folder of the project
+
+## Author
+
+@0xAdiyat
 
 
 
