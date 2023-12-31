@@ -1,6 +1,6 @@
 <img align="left" src="https://github.com/0xAdiyat/CoinPulse-UI-Kit/assets/67780459/f6ae5278-4240-468d-8bd7-b605f24c9fce" width="64" height="64"></img>
 
-<h1 align="left">CoinPulse - Wallet</h1>
+# CoinPulse - Wallet
 
 **CoinPulse - Your gateway to a colorful financial future**
 
@@ -12,9 +12,8 @@
 https://github.com/0xAdiyat/CoinPulse-UI-Kit/assets/67780459/1f4d70aa-dc3f-4cb4-a223-ccb10121d753
 
 
-## Disclaimer 🚧
-
-The project was created to enhance my UI design skills. Please feel free to `star the repository` if you want to show your support and receive notifications about major updates in its development. Additionally, contributions are welcome. Since I completed it in a hurry, some aspects are yet to be finished, including state management, which I plan to add when I have some free time. 
+> [!NOTE]  
+> The project was created to enhance my UI design skills. Please feel free to `star the repository` if you want to show your support and receive notifications about major updates > in its development. Additionally, contributions are welcome. Since I completed it in a hurry, some aspects are yet to be finished, including state management, which I plan to > > add when I have some free time. 
 
 ## Screenshots
 
@@ -39,18 +38,20 @@ Exchange Screen         |  Deposit Screen       |   Deposit 2 Screen
 - install flutter engine -> https://docs.flutter.dev/get-started/install
 - in cmd type `flutter run` in the root folder of the project
 
-## Contribution
-If you wish to contribute a change to any of the existing features or add new to this repo,
-please feel free to contribute,
-and send a [pull request](https://github.com/0xAdiyat/CoinPulse-UI-Kit/pulls). I welcome and encourage all pull requests. It usually takes me within 24-48 hours to respond to any issue or request.
 
-## Credit
-The design was inspired by [Dribble](https://dribbble.com/shots/16275745-Investment-App). Bcz of not having the design file & lacking time I couldn't bring out the exact UI.
+> [!IMPORTANT]  
+> If you wish to contribute a change to any of the existing features or add new to this repo,
+> please feel free to contribute,
+> and send a [pull request](https://github.com/0xAdiyat/CoinPulse-UI-Kit/pulls). I welcome and encourage all pull requests. It usually takes me within 24-48 hours to respond to any issue > or request.
+
+> [!NOTE]
+> The design was inspired by [Dribble](https://dribbble.com/shots/16275745-Investment-App). Bcz of not having the design file & lacking time I couldn't bring out the exact UI.
 
 ## Author
 @0xAdiyat
 
-
+<br>
+<p align="right">● <a href="#CoinPulse-Wallet">back to top</a></p>
 
 
 
