@@ -22,7 +22,7 @@ Exchange Screen         |  Deposit Screen       |   Deposit 2 Screen
 :-------------------------:|:-------------------------:|:-------------------------:|
 ![Exchange Screen](https://github.com/0xAdiyat/CoinPulse-UI-Kit/assets/67780459/c73f9788-e806-4b8a-9432-15c4aa05f5a9)|![Deposit Page](https://github.com/0xAdiyat/CoinPulse-UI-Kit/assets/67780459/cd38cd37-657c-4298-b9e5-b7b2ad3fc9cf)|![Deposit 2 0 Screen](https://github.com/0xAdiyat/CoinPulse-UI-Kit/assets/67780459/c4fc36a8-ed60-4e26-a892-463ab5c1ee05)|
 
-## Plugins
+## Packages
 
 | Name                                                                   | Usage                                         |
 | ---------------------------------------------------------------------- | --------------------------------------------- |
