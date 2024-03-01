@@ -13,7 +13,7 @@ https://github.com/0xAdiyat/CoinPulse-UI-Kit/assets/67780459/1f4d70aa-dc3f-4cb4-
 
 
 > [!NOTE]  
-> The project was created to enhance my UI design skills. Please feel free to `star the repository` if you want to show your support and receive notifications about major updates > in its development. Additionally, contributions are welcome. Since I completed it in a hurry, some aspects are yet to be finished, including state management, which I plan to > > add when I have some free time. 
+> The project was created to enhance my UI design skills. Please feel free to `star the repository` if you want to show your support and receive notifications about major updates in its development. Additionally, contributions are welcome. Since I completed it in a hurry, some aspects are yet to be finished, including state management, which I plan to add when I have some free time. 
 
 ## Screenshots
 
