@@ -47,6 +47,9 @@ Exchange Screen         |  Deposit Screen       |   Deposit 2 Screen
 > [!NOTE]
 > The design was inspired by [Dribble](https://dribbble.com/shots/16275745-Investment-App). Bcz of not having the design file & lacking time I couldn't bring out the exact UI.
 
+## Activities
+![Alt](https://repobeats.axiom.co/api/embed/60ca38e99a97d33d61be18e92dd0d0c576e4d16e.svg "Repobeats analytics image")
+
 ## Author
 @0xAdiyat
 
