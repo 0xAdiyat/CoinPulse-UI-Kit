@@ -7,33 +7,32 @@
 ![CoinPulse-Thumbnail](https://github.com/0xAdiyat/CoinPulse-UI-Kit/assets/67780459/d93b9534-a806-4f9f-bd8c-ab4846ce0280)
 
 
-## Preview 📽️
-
+## `📽️` `Preview`
 https://github.com/0xAdiyat/CoinPulse-UI-Kit/assets/67780459/1f4d70aa-dc3f-4cb4-a223-ccb10121d753
 
 
 > [!NOTE]  
 > The project was created to enhance my UI design skills. Please feel free to `star the repository` if you want to show your support and receive notifications about major updates in its development. Additionally, contributions are welcome. Since I completed it in a hurry, some aspects are yet to be finished, including state management, which I plan to add when I have some free time. 
 
-## Screenshots
+## `📸` `Screenshots`
 
 Exchange Screen         |  Deposit Screen       |   Deposit 2 Screen
 :-------------------------:|:-------------------------:|:-------------------------:|
 ![Exchange Screen](https://github.com/0xAdiyat/CoinPulse-UI-Kit/assets/67780459/c73f9788-e806-4b8a-9432-15c4aa05f5a9)|![Deposit Page](https://github.com/0xAdiyat/CoinPulse-UI-Kit/assets/67780459/cd38cd37-657c-4298-b9e5-b7b2ad3fc9cf)|![Deposit 2 0 Screen](https://github.com/0xAdiyat/CoinPulse-UI-Kit/assets/67780459/c4fc36a8-ed60-4e26-a892-463ab5c1ee05)|
 
-## Packages
+## `📦` `Packages`
 
 | Name                                                                   | Usage                                         |
 | ---------------------------------------------------------------------- | --------------------------------------------- |
 | [**GetX**](https://pub.dev/packages/get)                           | State Management                              |
 | [**Google-Fonts**](https://pub.dev/packages/google_fonts)                        | A Flutter package to use fonts from fonts.google.com |
 | [**Flutter-Svg**](https://pub.dev/packages/flutter_svg)                      | Provides SVG rendering and widget library for Flutter, which allows painting and displaying Scalable Vector Graphics 1.1 files |
-| [**Text-Transformation-Animation**](https://pub.dev/packages/text_transformation_animation)                                | Provides text transformation animation.               |
+| [**Text-Transformation-Animation**](https://pub.dev/packages/text_transformation_animation)                                | Provides text transformation animation.              |
 | [**Animate-Do**](https://pub.dev/packages/animate_do) | Provides beautiful animations inspired on Animate.css, every animation is a customizable widget|
 | [**Flutter-Launcher-Icons**](https://pub.dev/packages/flutter_launcher_icons) | A package which simplifies the task of updating your Flutter app's launcher icon |
 
 
-## Usage
+## `⚙` `Usage`
 
 - install flutter engine -> https://docs.flutter.dev/get-started/install
 - in cmd type `flutter run` in the root folder of the project
@@ -47,10 +46,10 @@ Exchange Screen         |  Deposit Screen       |   Deposit 2 Screen
 > [!NOTE]
 > The design was inspired by [Dribble](https://dribbble.com/shots/16275745-Investment-App). Bcz of not having the design file & lacking time I couldn't bring out the exact UI.
 
-## Activities
+## `🗂️` `Activities`
 ![Alt](https://repobeats.axiom.co/api/embed/60ca38e99a97d33d61be18e92dd0d0c576e4d16e.svg "Repobeats analytics image")
 
-## Author
+## `💻` `Author`
 @0xAdiyat
 
 <br>
